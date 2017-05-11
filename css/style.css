@@ -1,0 +1,160 @@
+/* line 1, ../scss/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 12, ../scss/style.scss */
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* line 19, ../scss/style.scss */
+header {
+  width: 100%;
+  height: 90px;
+}
+/* line 24, ../scss/style.scss */
+header ul.list-inline li {
+  float: left;
+  list-style: none;
+}
+/* line 27, ../scss/style.scss */
+header ul.list-inline li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+/* line 35, ../scss/style.scss */
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+/* line 41, ../scss/style.scss */
+header .lang li {
+  margin: 0 5px;
+}
+/* line 46, ../scss/style.scss */
+header .rec {
+  background-color: #eb2645;
+  height: 90px;
+}
+
+/* line 52, ../scss/style.scss */
+.banner {
+  width: 100%;
+  margin: 10px;
+}
+/* line 55, ../scss/style.scss */
+.banner img {
+  width: 100%;
+  height: 250px;
+}
+
+/* line 61, ../scss/style.scss */
+nav {
+  background: #182d47;
+  height: 70px;
+  padding: 17px;
+}
+/* line 67, ../scss/style.scss */
+nav ul.list-inline li {
+  float: left;
+  list-style: none;
+  vertical-align: middle;
+  horiz-align: center;
+}
+/* line 73, ../scss/style.scss */
+nav ul.list-inline li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 10px;
+}
+/* line 80, ../scss/style.scss */
+nav ul.list-inline li a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #182d47;
+}
+/* line 89, ../scss/style.scss */
+nav .search input {
+  border-radius: 0px !important;
+}
+
+/* line 97, ../scss/style.scss */
+main .slide {
+  background-color: lightgrey;
+  width: 75%;
+  height: 210px;
+}
+/* line 103, ../scss/style.scss */
+main .sidebar {
+  background: #eb2645;
+}
+/* line 105, ../scss/style.scss */
+main .sidebar aside {
+  padding: 10px 10px;
+  color: #fff;
+}
+/* line 116, ../scss/style.scss */
+main .products {
+  margin-top: 20px;
+  background-color: lightgrey;
+  padding-bottom: 20px;
+}
+/* line 118, ../scss/style.scss */
+main .products button {
+  border-radius: 0px !important;
+  background-color: #eb2645  !important;
+  color: #fff !important;
+}
+/* line 128, ../scss/style.scss */
+main .products .pro {
+  background-color: #fff;
+  margin-left: 12px;
+  padding: 10px 10px 10px 30px;
+  width: 280px;
+}
+
+/* line 140, ../scss/style.scss */
+footer .faq {
+  background-color: #eb2645;
+  margin-left: 0px;
+  color: #fff;
+}
+/* line 144, ../scss/style.scss */
+footer .faq a {
+  color: #fff;
+}
+/* line 149, ../scss/style.scss */
+footer .info {
+  background-color: #182d47;
+  margin-left: 0px;
+  color: #fff;
+}
+/* line 153, ../scss/style.scss */
+footer .info a {
+  color: #fff;
+}
+/* line 158, ../scss/style.scss */
+footer .copy {
+  background-color: #182d47;
+  margin-left: 0px;
+  color: lightgrey;
+}
+/* line 162, ../scss/style.scss */
+footer .copy a {
+  color: lightgrey;
+}
