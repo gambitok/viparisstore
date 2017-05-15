@@ -1,0 +1,29 @@
+{
+  "name": "viparisstore",
+  "version": "1.0.0",
+  "description": "paris",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html-build": "^0.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gambitok/viparisstore.git"
+  },
+  "author": "gd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gambitok/viparisstore/issues"
+  },
+  "homepage": "https://github.com/gambitok/viparisstore#readme"
+}
