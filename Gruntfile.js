@@ -42,6 +42,14 @@ module.exports = function(grunt) {
             }
         },
 
+        sprite:{
+            all: {
+                src: 'sprites/*.png',
+                dest: 'destination/spritesheet.png',
+                destCss: 'destination/sprites.css'
+            }
+        },
+
         htmlbuild: {
             dist: {
                 src: 'index.html',
@@ -87,5 +95,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-spritesmith');
     grunt.registerTask('default',['browserSync', 'watch', 'htmlbuild']);
 }

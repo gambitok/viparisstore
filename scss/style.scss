@@ -9,6 +9,10 @@ html, body {
   box-sizing: border-box;
 }
 
+.container {
+  margin: 0;
+}
+
 a:hover,
 a:focus,
 a:visited,
@@ -19,11 +23,15 @@ a:active {
 header {
   width: 100%;
   height: 90px;
+  margin: 0;
+
+  font-size: 8pt;
 
   ul.list-inline {
     li {
       float: left;
       list-style: none;
+      margin: 0 5px;
       a {
         text-transform: uppercase;
         text-decoration: none;
@@ -33,25 +41,39 @@ header {
   }
 
   .logo img {
-    width: 100%;
-    height: 100%;
+    width: 225px;
+    height: 85px;
+  }
+
+  .login {
+    padding-left:130px;
+    margin-top: 30px;
   }
 
   .lang {
-    li {
-      margin: 0 5px;
+    padding-left:60px;
+    margin-top: 30px;
+    img {
+      width: 30px;
+      height: 20px;
     }
   }
 
   .rec {
     background-color: #eb2645;
-    height: 90px;
+    height: 84px;
+    .count {
+      color: #ffffff;
+    }
+    img {
+      width: 45px;
+      height: 45px;
+      margin: 20px 0 0 20px;
+    }
   }
 }
 
-.banner {
-  width: 100%;
-  margin: 10px;
+#banner {
   img {
     width: 100%;
     height: 250px;
@@ -61,7 +83,8 @@ header {
 nav {
   background: #182d47;
   height: 70px;
-  padding: 17px;
+
+  padding: 9px;
   ul.list-inline {
 
     li {
@@ -76,6 +99,7 @@ nav {
         color: #fff;
         display: inline-block;
         padding: 10px 10px;
+        text-align: center;
 
           &:hover {
             text-decoration: none;
@@ -87,80 +111,180 @@ nav {
   }
 
   .search input {
-    border-radius: 0px !important;
+    margin-left: 60px;
+    width: 310px;
+    height: 52px;
   }
-
 }
 
 main {
+  width: 100%;
 
-  .slide {
-    background-color: lightgrey;
-    width: 75%;
-    height: 210px;
-  }
-
-  .sidebar {
-    background: #eb2645;
-    aside {
-      padding: 10px 10px;
-      color: #fff;
+  .navig {
+    margin-left:65px;
+    height: 100px;
+    .row {
+      padding: 20px 20px 0px 0px;
     }
 
-    img {
+  }
 
+  .main_content {
+    margin-left:50px;
+    margin-bottom: 85px;
+
+    .sidebar {
+      background: #eb2645;
+      width: 305px;
+      height: 470px;
+      aside {
+        padding: 10px 10px;
+        color: #fff;
+      }
+      img.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130px;
+        height: 170px;
+      }
+    }
+
+    .slide {
+      margin-left: 20px;
+      background-color: green;
+      width: 900px;
+      height: 470px;
     }
 
   }
 
   .products {
+    padding-left:65px;
+    padding-top:50px;
+    margin-top: 20px;
+    background-color: #f5f6f7;
+    padding-bottom: 20px;
 
     button {
-      border-radius: 0px !important;
-      background-color: #eb2645  !important;
-      color: #fff !important;
+      background-color: #eb2645;
+      color: #fff;
     }
-
-    margin-top: 20px;
-    background-color: lightgrey;
-    padding-bottom: 20px;
 
     .pro {
       background-color: #fff;
-      margin-left:12px;
-      padding: 10px 10px 10px 30px;
-      width: 280px;
-    }
+      margin-left:20px;
+      padding: 40px 40px 25px 25px;
+      width: 300px;
+      height: 370px;
 
+      img.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130px;
+        height: 110px;
+      }
+
+      button.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        height: 40px;
+      }
+    }
   }
 }
 
 
 footer {
+  background-color: #eb2645;
+
   .faq {
     background-color: #eb2645;
     margin-left: 0px;
     color:#fff;
-    a {
-      color:#fff;
+    height: 80px;
+    padding: 35px 35px 0px 215px;
+
+    ul.list-inline {
+      li {
+        float: left;
+        list-style: none;
+        margin: 0 30px;
+
+        a {
+          color: #fff;
+        }
+      }
     }
   }
 
   .info {
+
+    padding: 45px 35px 0px 50px;
     background-color: #182d47;
-    margin-left: 0px;
     color:#fff;
-    a {
-      color:#fff;
+
+    input {
+      width: 290px;
+      height: 50px;
+    }
+
+    .about {
+      padding-bottom:50px;
+      text-align: center;
+    }
+
+    .cont {
+      padding-left:130px;
+    }
+
+    .social {
+      padding-top:30px;
+    }
+
+    ul.list-inline {
+      li {
+        float: left;
+        list-style: none;
+        margin: 0 5px;
+          a {
+          color:#fff;
+          }
+          img {
+            width: 30px;
+            height: 30px;
+          }
+      }
     }
   }
 
   .copy {
+    padding-top:15px;
+    padding-left:50px;
     background-color: #182d47;
-    margin-left: 0px;
     color:lightgrey;
-    a {
-      color:lightgrey;
+    ul.list-inline {
+      li {
+        float: left;
+        list-style: none;
+        margin: 0 5px;
+          a {
+          color: lightgrey;
+        }
+      }
+
     }
   }
 }
+
+//.icon-fork {
+//  img {
+//    background-image: url('../destination/spritesheet.png');
+//    background-position: 0px 0px;
+//    width: 64px;
+//    height: 64px;
+//  }
+//}

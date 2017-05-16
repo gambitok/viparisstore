@@ -9,47 +9,48 @@
 </head>
 
 <body>
+
 <header>
-    <div class="container">
         <div class="row">
-            <div class="col-sm-1 logo">
+            <div class="col-lg-1 logo">
                 <a href=""><img src="img/logo.png" alt="Logotype"></a>
             </div>
-            <div class="col-sm-offset-5 col-sm-3 login">
+            <div class="col-lg-offset-5 col-lg-3 login">
                 <ul class="list-inline">
                     <li><a href="#">Mon compte</a></li>
                     <li><a href="#">Liste d'achats</a></li>
                 </ul>
             </div>
-            <div class="col-sm-2 lang">
+            <div class="col-lg-2 lang">
                 <a href="#"><img src="img/flag1.png" alt="Eng"></a>
                 <a href="#"><img src="img/flag2.png" alt="Fra"></a>
             </div>
-            <div class="col-sm-1 rec">
+            <div class="col-lg-1 rec">
                 <a href="#"><img src="img/recycle.png" alt="Recycle"></a>
+
+                <label class="count">10</label>
             </div>
         </div>
-    </div>
 </header>
 
-<div class="container banner">
-    <img src="img/banner.png">
-</div>
+<section id="banner">
+    <img src="" alt="Banner" class="banner">
+</section>
 
 <nav>
     <div class="container">
         <div class="row">
-            <div class="col-sm-10">
+            <div class="col-lg-10">
                 <ul class="list-inline">
                     <li><a href="#">Presentation</a></li>
-                    <li><a href="#">Acceder au site</a></li>
-                    <li><a href="#">Brancher mon stand</a></li>
-                    <li><a href="#">Amenager mon stand</a></li>
+                    <li><a href="#">Acceder<br> au site</a></li>
+                    <li><a href="#">Brancher<br> mon stand</a></li>
+                    <li><a href="#">Amenager<br> mon stand</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Autour de ma manifestation</a></li>
+                    <li><a href="#">Autour de ma<br> manifestation</a></li>
                 </ul>
             </div>
-            <div class="col-sm-2 search">
+            <div class="col-lg-2 search">
                 <input type="search" placeholder="Recherche">
             </div>
         </div>
@@ -58,18 +59,39 @@
 
 
 <main>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="sidebar">
-                    <aside>text</aside>
-                    <aside>text</aside>
-                    <aside>text</aside>
-                    <aside>text</aside>
-                    <aside><img src="img/sidebar.png" alt="SidebarImage"></aside>
+        <div class="navig">
+            <div class="row">
+                <div class="col-lg-4">
+                Accueil > Presentation
                 </div>
             </div>
-            <div class="col-sm-9">
+            <div class="row">
+                <div class="col-lg-4">
+                Palais des congres de Paris du 01/10/2016 au 16/11/2016
+                </div>
+                <div class="col-lg-offset-2 col-lg-3">
+                Fermeture catalogue jj/mm/aaaa
+                </div>
+                <div class="col-lg-3">
+                Date de majoration jj/mm/aaaa
+                </div>
+            </div>
+        </div>
+
+        <div class="row main_content">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <aside><span>Informations pratiques</span></aside>
+                    <aside>Information pratiques</aside>
+                    <aside>Site de I'organisateur</aside>
+                    <aside>Telecharger le cataloge<br>
+                    de produits</aside>
+                    <aside>Telecharger le dossier technique</aside>
+                    <aside>Telecharger le dossier technique</aside>
+                    <aside><img class="displayed" src="#" alt="SidebarImage"></aside>
+                </div>
+            </div>
+            <div class="col-lg-9">
                 <div class="container">
                     <div class="slide">
 
@@ -77,49 +99,47 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="products">
-        <div class="container">
-            Nos suggestions
-            <div class="row">
-                <div class="col-sm-2 pro">
-                    <img src="#" alt=""><br>
-                    lalal<br>
-                    en stock<br>
-                    A parte de <span>00,00 E NT</span><br>
-                    <button type="button">Voir le produit</button>
-                </div>
-                <div class="col-sm-2 pro">
-                    <img src="#" alt=""><br>
-                    lalal<br>
-                    en stock<br>
-                    A parte de <span>00,00 E NT</span><br>
-                    <button type="button">Voir le produit</button>
-                </div>
-                <div class="col-sm-2 pro">
-                    <img src="#" alt=""><br>
-                    lalal<br>
-                    en stock<br>
-                    A parte de <span>00,00 E NT</span><br>
-                    <button type="button">Voir le produit</button>
-                </div>
-                <div class="col-sm-2 pro">
-                    <img src="#" alt=""><br>
-                    lalal<br>
-                    en stock<br>
-                    A parte de <span>00,00 E NT</span><br>
-                    <button type="button">Voir le produit</button>
-                </div>
+        <div class="row products">
+                <div class="container">
+                    Nos suggestions
+                    <div class="row">
+                        <div class="col-lg-2 pro">
+                            <img class="displayed" src="#" alt=""><br>
+                            lalal<br>
+                            en stock<br>
+                            A parte de <span>00,00 E NT</span><br>
+                            <button class="displayed" type="button">Voir le produit</button>
+                        </div>
+                        <div class="col-lg-2 pro">
+                            <img class="displayed" src="#" alt=""><br>
+                            lalal<br>
+                            en stock<br>
+                            A parte de <span>00,00 E NT</span><br>
+                            <button class="displayed" type="button">Voir le produit</button>
+                        </div>
+                        <div class="col-lg-2 pro">
+                            <img class="displayed" src="#" alt=""><br>
+                            lalal<br>
+                            en stock<br>
+                            A parte de <span>00,00 E NT</span><br>
+                            <button class="displayed" type="button">Voir le produit</button>
+                        </div>
+                        <div class="col-lg-2 pro">
+                            <img class="displayed"  src="#" alt=""><br>
+                            lalal<br>
+                            en stock<br>
+                            A parte de <span>00,00 E NT</span><br>
+                            <button class="displayed" type="button">Voir le produit</button>
+                        </div>
+                    </div>
             </div>
         </div>
-    </div>
 </main>
 
 <footer>
-    <div class="container">
         <div class="row faq">
-            <div class="col-sm-offset-1 col-sm-6">
+            <div class="col-lg">
                 <ul class="list-inline">
                     <li>Besoin d'aide?</li>
                     <li><a href="#">FAQ</a></li>
@@ -129,37 +149,41 @@
                 </ul>
             </div>
         </div>
+
         <div class="row info">
-            <div class="col-sm-6">
+            <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-lg-6 about">
                         Premier salon<br>
                         Les infromation cles
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-lg-6 about">
                         Liste d'archats<br>
-                        Rezerves avant de commander
+                        Rezerves avant<br>
+                        de commander
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-lg-6 about">
                         Service exposants<br>
-                        Les conseils de nos experts
+                        Les conseils<br>
+                        de nos experts
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-lg-6 about">
                         Devenir prestataire<br>
-                        Donnez de la visibilite a vos produits
+                        Donnez de la visibilite<br>
+                        a vos produits
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="col-sm-6">
-                    <div class="row">
+            <div class="col-lg-6">
+                <div class="col-lg-6">
+                    <div class="row ">
                         Lettre d'information<br>
                         Etre alerte des advantages & nouveautes<br>
                         <input type="text" placeholder="Votre adresse mail">
                     </div>
-                    <div class="row">
+                    <div class="row social">
                         Viparis social<br>
                         Restez connecter sur les reseaux sociaux<br>
                         <ul class="list-inline">
@@ -170,7 +194,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-lg-6 cont">
                     Sites de groupe<br>
                     Decouvrez notre groupe<br>
                     <a href="viparis.com">viparis.com</a><br>
@@ -178,11 +202,12 @@
                 </div>
             </div>
         </div>
+
         <div class="row copy">
-            <div class="col-sm-2">
+            <div class="col-lg-2">
                 &copy; Viparis 2016
             </div>
-            <div class="col-sm-offset-4 col-sm-6">
+            <div class="col-lg-offset-4 col-lg-6">
                 <ul class="list-inline">
                     <li><a href="#">A propos de Viparis</a></li>
                     <li><a href="#">Credits & mentions legales</a></li>
@@ -193,8 +218,14 @@
             </div>
 
         </div>
-    </div>
 
 </footer>
+
+
+<!--<div class="icon-fork ">-->
+    <!--<img>-->
+<!--</div>-->
+
+
 </body>
 </html>
