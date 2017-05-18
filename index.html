@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <title>Vi Paris Store</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
+    <div class="container">
         <div class="row">
             <div class="col-lg-1 logo">
                 <a href=""><img src="img/logo.png" alt="Logotype"></a>
@@ -26,32 +28,36 @@
                 <a href="#"><img src="img/flag2.png" alt="Fra"></a>
             </div>
             <div class="col-lg-1 rec">
-                <a href="#"><img src="img/recycle.png" alt="Recycle"></a>
-
+                <img src="img/recycle.png" alt="Recycle">
                 <label class="count">10</label>
             </div>
         </div>
+    </div>
 </header>
 
-<section id="banner">
-    <img src="" alt="Banner" class="banner">
+<section>
+    <div class="container" style="display: table; overflow: hidden;">
+        <div class="row banner" style="display: table-cell; vertical-align: middle;">
+        <h1>Le rendez-vous mondial de l'innovation alimentaire</h1>
+        </div>
+    </div>
 </section>
 
 <nav>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10">
+        <div class="row navigation">
+            <div class="col-lg-9">
                 <ul class="list-inline">
                     <li><a href="#">Presentation</a></li>
                     <li><a href="#">Acceder<br> au site</a></li>
-                    <li><a href="#">Brancher<br> mon stand</a></li>
+                    <li><a href="#">pancher<br> mon stand</a></li>
                     <li><a href="#">Amenager<br> mon stand</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Services<br></li>
                     <li><a href="#">Autour de ma<br> manifestation</a></li>
                 </ul>
             </div>
-            <div class="col-lg-2 search">
-                <input type="search" placeholder="Recherche">
+            <div class="col-lg-3 search">
+                <input type="search" placeholder="Recherche" class="inputsearch">
             </div>
         </div>
     </div>
@@ -59,17 +65,18 @@
 
 
 <main>
+    <div class="container">
         <div class="navig">
             <div class="row">
                 <div class="col-lg-4">
-                Accueil > Presentation
+                   <h2> <a href="#">Accueil</a> > Presentation </h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                 Palais des congres de Paris du 01/10/2016 au 16/11/2016
                 </div>
-                <div class="col-lg-offset-2 col-lg-3">
+                <div class="col-lg-offset-1 col-lg-3">
                 Fermeture catalogue jj/mm/aaaa
                 </div>
                 <div class="col-lg-3">
@@ -81,18 +88,19 @@
         <div class="row main_content">
             <div class="col-lg-3">
                 <div class="sidebar">
-                    <aside><span>Informations pratiques</span></aside>
+                    <span>Informations pratiques</span>
                     <aside>Information pratiques</aside>
                     <aside>Site de I'organisateur</aside>
-                    <aside>Telecharger le cataloge<br>
+                    <aside>Telecharger le cataloge<p>
                     de produits</aside>
                     <aside>Telecharger le dossier technique</aside>
                     <aside>Telecharger le dossier technique</aside>
-                    <aside><img class="displayed" src="#" alt="SidebarImage"></aside>
+                    <img class="displayed" src="#" alt="SidebarImage">
                 </div>
             </div>
+
             <div class="col-lg-9">
-                <div class="container">
+                <div class="row">
                     <div class="slide">
 
                     </div>
@@ -102,42 +110,44 @@
 
         <div class="row products">
                 <div class="container">
-                    Nos suggestions
+                    <h2>Nos suggestions</h2>
                     <div class="row">
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt=""><br>
-                            lalal<br>
-                            en stock<br>
-                            A parte de <span>00,00 E NT</span><br>
+                            <img class="displayed" src="#" alt=""><p>
+                            <h2>Tablette Ipad 2</h2><br>
+                            <h3>en stock</h3><p>
+                            <h4>A parte de <span>00,00 € NT</span></h4><p>
                             <button class="displayed" type="button">Voir le produit</button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt=""><br>
-                            lalal<br>
-                            en stock<br>
-                            A parte de <span>00,00 E NT</span><br>
+                            <img class="displayed" src="#" alt=""><p>
+                            <h2>Mur vegetal en contre plaque</h2><p>
+                            <h3>en stock</h3><p>
+                            <h4>A parte de <span>00,00 € NT</span></h4><p>
                             <button class="displayed" type="button">Voir le produit</button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt=""><br>
-                            lalal<br>
-                            en stock<br>
-                            A parte de <span>00,00 E NT</span><br>
+                            <img class="displayed" src="#" alt=""><p>
+                            <h2>Corbeile de fruits</h2><br>
+                            <h3>en stock</h3><p>
+                            <h4>A parte de <span>00,00 € NT</span></h4><p>
                             <button class="displayed" type="button">Voir le produit</button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed"  src="#" alt=""><br>
-                            lalal<br>
-                            en stock<br>
-                            A parte de <span>00,00 E NT</span><br>
+                            <img class="displayed"  src="#" alt=""><p>
+                            <h2>Nom di produit sur plusieurs lignes</h2><p>
+                            <h3>en stock</h3><p>
+                            <h4>A parte de <span>00,00 € NT</span></h4><p>
                             <button class="displayed" type="button">Voir le produit</button>
                         </div>
                     </div>
             </div>
         </div>
+    </div>
 </main>
 
-<footer>
+<div class="prefooter">
+    <div class="container">
         <div class="row faq">
             <div class="col-lg">
                 <ul class="list-inline">
@@ -149,43 +159,51 @@
                 </ul>
             </div>
         </div>
+    </div>
+</div>
 
+<footer>
+    <div class="container">
         <div class="row info">
             <div class="col-lg-6">
                 <div class="row">
                     <div class="col-lg-6 about">
-                        Premier salon<br>
-                        Les infromation cles
+                        <h2>Premier salon</h2><p>
+                        <hr><p>
+                        <h4>Les infromation cles</h4>
                     </div>
                     <div class="col-lg-6 about">
-                        Liste d'archats<br>
-                        Rezerves avant<br>
-                        de commander
+                        <h2>Liste d'archats</h2><p>
+                        <hr><p>
+                        <h4>Rezerves avant<p>
+                        de commander</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 about">
-                        Service exposants<br>
-                        Les conseils<br>
-                        de nos experts
+                        <h2>Service exposants</h2><p>
+                        <hr><p>
+                        <h4>Les conseils<p>
+                        de nos experts</h4>
                     </div>
                     <div class="col-lg-6 about">
-                        Devenir prestataire<br>
-                        Donnez de la visibilite<br>
-                        a vos produits
+                        <h2>Devenir prestataire</h2><p>
+                        <hr><p>
+                        <h4>Donnez de la visibilite<p>
+                        a vos produits</h4>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="col-lg-6">
                     <div class="row ">
-                        Lettre d'information<br>
-                        Etre alerte des advantages & nouveautes<br>
+                        <h3>Lettre d'information</h3><p>
+                        <h4>Etre alerte des advantages & nouveautes</h4><p>
                         <input type="text" placeholder="Votre adresse mail">
                     </div>
                     <div class="row social">
-                        Viparis social<br>
-                        Restez connecter sur les reseaux sociaux<br>
+                        <h3>Viparis social</h3><p>
+                        <h4>Restez connecter sur les reseaux sociaux</h4><p>
                         <ul class="list-inline">
                             <li><a href="#"><img src="#" alt="facebook"></a></li>
                             <li><a href="#"><img src="#" alt="twitter"></a></li>
@@ -195,15 +213,16 @@
                     </div>
                 </div>
                 <div class="col-lg-6 cont">
-                    Sites de groupe<br>
-                    Decouvrez notre groupe<br>
-                    <a href="viparis.com">viparis.com</a><br>
-                    <a href="venuesinparis.com">venuesinparis.com</a>
+                    <h3>Sites de groupe</h3><p>
+                    <h4>Decouvrez notre groupe</h4><p>
+                    <h4><a href="viparis.com">viparis.com</a></h4><p>
+                    <h4><a href="venuesinparis.com">venuesinparis.com</a></h4>
                 </div>
             </div>
         </div>
 
         <div class="row copy">
+            <hr>
             <div class="col-lg-2">
                 &copy; Viparis 2016
             </div>
@@ -216,7 +235,7 @@
                     <li><a href="#">CGS</a></li>
                 </ul>
             </div>
-
+        </div>
         </div>
 
 </footer>
