@@ -1,23 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Vi Paris Store</title>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ViParis Store</title>
+    <link type="text/css" rel="stylesheet" href="css/layout.css" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-1 logo">
-                <a href=""><img src="img/logo.png" alt="Logotype"></a>
-            </div>
-            <div class="col-lg-offset-4 col-lg-4 login">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 logo">
+                    <a href=""><img src="img/logo.png" alt="Logotype"></a>
+                </div>
+                <div class="col-lg-offset-6 col-lg-3 login">
                     <ul class="row">
                         <li class="col-lg-6">
                             <img src="img/acc.png" alt="acc">
@@ -28,244 +29,264 @@
                             <a href="#" class="like">Liste d'achats</a>
                         </li>
                     </ul>
-            </div>
-            <div class="col-lg-2 lang">
-                <a href="#" col-lg-6><img src="img/fra.png" alt="Fra"></a>
-                <a href="#" col-lg-6><img src="img/uk.png" alt="Eng"></a>
-            </div>
-            <div class="col-lg-1 rec">
-                <a href="">
+                </div>
+                <div class="col-lg-1 lang">
+                    <a href="#" col-lg-6><img src="img/fra.png" alt="Fra"></a>
+                    <a href="#" col-lg-6><img src="img/uk.png" alt="Eng"></a>
+                </div>
+                <div class="col-lg-1 rec">
+                    <a href="">
                     <img src="img/recycle.png" alt="Recycle">
                     <label class="count">10</label>
                 </a>
-            </div>
-        </div>
-    </div>
-</header>
-
-<section>
-    <div class="container tablebanner">
-        <div class="row banner">
-        <h1>Le rendez-vous mondial de l'innovation alimentaire</h1>
-        </div>
-    </div>
-</section>
-
-<nav>
-    <div class="container">
-        <div class="row navigation">
-            <div class="col-lg-9">
-                <ul class="list-inline">
-                    <li><a href="#">Presentation</a></li>
-                    <li><a href="#">Acceder<br> au site</a></li>
-                    <li><a href="#">Brancher<br> mon stand</a></li>
-                    <li><a href="#">Amenager<br> mon stand</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Autour de ma<br> manifestation</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 search">
-                <input type="submit" value=" ">
-                <input type="search" placeholder="Recherche">
-            </div>
-        </div>
-    </div>
-</nav>
-
-
-<main>
-    <div class="container">
-        <div class="navig">
-            <div class="row">
-                <div class="col-lg-4">
-                   <h2> <a href="#">Accueil</a> > Presentation </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5">
-                Palais des congres de Paris du 01/10/2016 au 16/11/2016
-                </div>
-                <div class="col-lg-offset-1 col-lg-3">
-                Fermeture catalogue jj/mm/aaaa
-                </div>
-                <div class="col-lg-3">
-                Date de majoration jj/mm/aaaa
                 </div>
             </div>
         </div>
-
-        <div class="row main_content">
-            <div class="col-lg-3">
-                <div class="sidebar">
-                    <span>Informations pratiques</span>
-                    <aside>Information pratiques</aside>
-                    <aside>Site de I'organisateur</aside>
-                    <aside>Telecharger le cataloge<p>
-                    de produits</aside>
-                    <aside>Telecharger le dossier technique</aside>
-                    <aside>Telecharger le dossier technique</aside>
-                    <img class="displayed" src="#" alt="SidebarImage">
+    </header>
+    <section>
+        <div class="container tablebanner">
+            <div class="row banner">
+                <h1>Le rendez-vous mondial de l'innovation alimentaire</h1>
+            </div>
+        </div>
+    </section>
+    <nav>
+        <div class="container">
+            <div class="row navigation">
+                <div class="col-lg-9">
+                    <ul id="menu" class="list-inline">
+                        <li><a href="#">Presentation</a></li>
+                        <li><a href="#">Acceder<br> au site</a></li>
+                        <li><a href="#" target="_blank">Brancher<br> mon stand</a></li>
+                        <li><a href="#">Amenager<br> mon stand</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Autour de ma<br> manifestation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 search">
+                    <input type="submit" value=" ">
+                    <input type="search" placeholder="Recherche">
                 </div>
             </div>
-
-            <div class="col-lg-9">
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="navig">
                 <div class="row">
-                    <div class="slide">
-
+                    <div class="col-lg-4">
+                        <h2> <a href="#">Accueil</a> > Presentation </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        Palais des congres de Paris du 01/10/2016 au 16/11/2016
+                    </div>
+                    <div class="col-lg-offset-1 col-lg-3">
+                        Fermeture catalogue jj/mm/aaaa
+                    </div>
+                    <div class="col-lg-3">
+                        Date de majoration jj/mm/aaaa
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row products">
+            <div class="row main_content">
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <span>Informations pratiques</span>
+                        <aside>Information pratiques</aside>
+                        <aside>Site de I'organisateur</aside>
+                        <aside>Telecharger le cataloge
+                            <p>
+                                de produits</aside>
+                        <aside>Telecharger le dossier technique</aside>
+                        <aside>Telecharger le dossier technique</aside>
+                        <img class="displayed" src="img/sidebar-img.png" alt="SidebarImage">
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="slide">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row products">
                 <div class="container">
                     <h2>Nos suggestions</h2>
                     <div class="row">
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt=""><p>
-                            <h2>Tablette Ipad 2</h2><br>
-                            <h3>en stock</h3><p>
-                            <h4>A parte de <span>00,00 € NT</span></h4><p>
-                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <img class="displayed" src="#" alt="">
+                            <p>
+                                <h2>Tablette Ipad 2</h2><br>
+                                <h3>en stock</h3>
+                                <p>
+                                    <h4>A parte de <span>00,00 € NT</span></h4>
+                                    <p>
+                                        <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt=""><p>
-                            <h2>Mur vegetal en contre plaque</h2><p>
-                            <h3>en stock</h3><p>
-                            <h4>A parte de <span>00,00 € NT</span></h4><p>
-                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <img class="displayed" src="#" alt="">
+                            <p>
+                                <h2>Mur vegetal en contre plaque</h2>
+                                <p>
+                                    <h3>en stock</h3>
+                                    <p>
+                                        <h4>A parte de <span>00,00 € NT</span></h4>
+                                        <p>
+                                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt=""><p>
-                            <h2>Corbeile de fruits</h2><br>
-                            <h3>en stock</h3><p>
-                            <h4>A parte de <span>00,00 € NT</span></h4><p>
-                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <img class="displayed" src="#" alt="">
+                            <p>
+                                <h2>Corbeile de fruits</h2><br>
+                                <h3>en stock</h3>
+                                <p>
+                                    <h4>A parte de <span>00,00 € NT</span></h4>
+                                    <p>
+                                        <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed"  src="#" alt=""><p>
-                            <h2>Nom di produit sur plusieurs lignes</h2><p>
-                            <h3>en stock</h3><p>
-                            <h4>A parte de <span>00,00 € NT</span></h4><p>
-                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <img class="displayed" src="#" alt="">
+                            <p>
+                                <h2>Nom di produit sur plusieurs lignes</h2>
+                                <p>
+                                    <h3>en stock</h3>
+                                    <p>
+                                        <h4>A parte de <span>00,00 € NT</span></h4>
+                                        <p>
+                                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
-<footer>
-    <div class="container">
-
-        <div class="row faq">
-            <div class="col-lg-offset-2 col-lg-2">
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row faq">
+                <div class="col-lg-offset-2 col-lg-2">
                     <h2>Besoin d'aide?</h2>
-            </div>
-            <div class="col-lg-1">
+                </div>
+                <div class="col-lg-1">
                     <img src="img/faq.png" alt="faq">
                     <a href="#">FAQ</a>
-            </div>
-            <div class="col-lg-1">
-                    <img src="img/tch.png" alt="tchat">
+                </div>
+                <div class="col-lg-1">
+                    <img src="img/tchat.png" alt="tchat">
                     <a href="#">Tchat</a>
-            </div>
-             <div class="col-lg-1">
-                    <img src="img/app.png" alt="appeler">
+                </div>
+                <div class="col-lg-1">
+                    <img src="img/appel.png" alt="appeler">
                     <a href="#">Appeler</a>
-             </div>
-             <div class="col-lg-2">
-                    <img src="img/cnt.png" alt="contact">
-                    <a href="#">Contact</a>
-             </div>
-        </div>
-
-        <div class="row info">
-            <div class="col-lg-6 info_1">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Premier salon</h2><p>
-                        <hr><p>
-                        <h4>Les infromation cles</h4>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2>Liste d'archats</h2><p>
-                        <hr><p>
-                        <h4>Rezerves avant<p>
-                        de commander</h4>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Service exposants</h2><p>
-                        <hr><p>
-                        <h4>Les conseils<p>
-                        de nos experts</h4>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2>Devenir prestataire</h2><p>
-                        <hr><p>
-                        <h4>Donnez de la visibilite<p>
-                        a vos produits</h4>
-                    </div>
+                <div class="col-lg-2">
+                    <img src="img/mail.png" alt="contact">
+                    <a href="#">Contact</a>
                 </div>
             </div>
-            <div class="col-lg-6 info_2">
-                <div class="row">
-                    <div class="col-lg-6grunt">
-                        <div class="row">
-                            <h3>Lettre d'information</h3><p>
-                            <h4>Etre alerte des advantages & nouveautes</h4><p>
-                            <div class="adress">
-                                <input type="text" placeholder="Votre adresse mail">
-                                <input type="submit" value="OK">
+
+            <div class="row info">
+                <div class="col-lg-6 info_1">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>Premier salon</h2>
+                            <p>
+                                <hr>
+                                <p>
+                                    <h4>Les infromation cles</h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Liste d'archats</h2>
+                            <p>
+                                <hr>
+                                <p>
+                                    <h4>Rezerves avant
+                                        <p>
+                                            de commander</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>Service exposants</h2>
+                            <p>
+                                <hr>
+                                <p>
+                                    <h4>Les conseils
+                                        <p>
+                                            de nos experts</h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Devenir prestataire</h2>
+                            <p>
+                                <hr>
+                                <p>
+                                    <h4>Donnez de la visibilite
+                                        <p>
+                                            a vos produits</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 info_2">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <h3>Lettre d'information</h3>
+                                <p>
+                                    <h4>Etre alerte des advantages & nouveautes</h4>
+                                    <p>
+                                        <div class="adress">
+                                            <input type="text" placeholder="Votre adresse mail">
+                                            <input type="submit" value="OK">
+                                        </div>
+                            </div>
+                            <div class="row social">
+                                <h3>Viparis social</h3>
+                                <p>
+                                    <h4>Restez connecter sur les reseaux sociaux</h4>
+                                    <p>
+                                        <ul class="list-inline">
+                                            <li><a href="#"><img src="img/pikachu.png" alt="facebook"></a></li>
+                                            <li><a href="#"><img src="img/pikachu.png" alt="twitter"></a></li>
+                                            <li><a href="#"><img src="img/pikachu.png" alt="youtube"></a></li>
+                                            <li><a href="#"><img src="img/pikachu.png" alt="in"></a></li>
+                                        </ul>
                             </div>
                         </div>
-                        <div class="row social">
-                            <h3>Viparis social</h3><p>
-                            <h4>Restez connecter sur les reseaux sociaux</h4><p>
-                            <ul class="list-inline">
-                                <li><a href="#"><img src="img/pikachu.png" alt="facebook"></a></li>
-                                <li><a href="#"><img src="img/pikachu.png" alt="twitter"></a></li>
-                                <li><a href="#"><img src="img/pikachu.png" alt="youtube"></a></li>
-                                <li><a href="#"><img src="img/pikachu.png" alt="in"></a></li>
-                            </ul>
+                        <div class="col-lg-6 group">
+                            <h3>Sites de groupe</h3>
+                            <p>
+                                <h4>Decouvrez notre groupe</h4>
+                                <p>
+                                    <h4><a href="viparis.com">viparis.com</a></h4>
+                                    <p>
+                                        <h4><a href="venuesinparis.com">venuesinparis.com</a></h4>
                         </div>
-                    </div>
-                    <div class="col-lg-6 group">
-                        <h3>Sites de groupe</h3><p>
-                        <h4>Decouvrez notre groupe</h4><p>
-                        <h4><a href="viparis.com">viparis.com</a></h4><p>
-                        <h4><a href="venuesinparis.com">venuesinparis.com</a></h4>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row copy">
-            <hr>
-            <div class="col-lg-2">
-                <h4>&copy; Viparis 2016</h4>
+            <div class="row copy">
+                <hr>
+                <div class="col-lg-2">
+                    <h4>&copy; Viparis 2016</h4>
+                </div>
+                <div class="col-lg-offset-3 col-lg-7">
+                    <ul class="list-inline">
+                        <li><a href="#">A propos de Viparis</a></li>
+                        <li><a href="#">Credits & mentions legales</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">CGV.CHU</a></li>
+                        <li><a href="#">CGS</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-offset-3 col-lg-7">
-                <ul class="list-inline">
-                    <li><a href="#">A propos de Viparis</a></li>
-                    <li><a href="#">Credits & mentions legales</a></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">CGV.CHU</a></li>
-                    <li><a href="#">CGS</a></li>
-                </ul>
-            </div>
         </div>
-        </div>
-
-</footer>
-
-
-<!--<div class="icon-fork ">-->
-    <!--<img>-->
-<!--</div>-->
-
-
+    </footer>
 </body>
+
 </html>

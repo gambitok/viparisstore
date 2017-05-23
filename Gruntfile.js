@@ -1,21 +1,19 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+        TemplatePath: "templates",
+        StylePath: "css",
+        watch: {
+            sass: {
+                files: "scss/*.scss",
+                tasks: ['sass']
+            }
+        },
         sass: {
-            dist: {
-                options: {
-                    sourcemap: false,
-                    compress: false,
-                    yuicompress: false,
-                    style: 'expanded',
-                    lineNumbers: true
-                    // browsers: ['last 2 versions', 'ie 9']
-                },
+            dev: {
                 files: {
-                    'css/style.css' : 'scss/style.scss',
-                    'css/layout.css' : 'scss/layout.scss'
+                    "css/style.css" : "scss/style.scss"
                 }
-            },
+            }
         },
 
         browserSync: {
@@ -23,13 +21,14 @@ module.exports = function(grunt) {
                 bsFiles: {
                     src: [
                         "css/*.css",
-                        "*.html"
+                        "*./*.html"
                     ]
                 },
                 options: {
                     watchTask: true,
                     server: {
-                        baseDir: "./"
+                        baseDir: "./",
+                        styleDir: "css/",
                     }
                 }
             }
@@ -52,49 +51,36 @@ module.exports = function(grunt) {
 
         htmlbuild: {
             dist: {
-                src: 'index.html',
-                dest: 'samples/',
+                src: 'templates/index.html',
+                dest: './',
                 options: {
                     beautify: true,
-                    prefix: '//some-cdn',
                     relative: true,
-                    basePath: false,
-                    scripts: {
-                        bundle: [
-                            '<%= fixturesPath %>/js/*.js',
-                            '!**/main.js',
-                        ],
-                        main: '<%= fixturesPath %>/js/main.js'
-                    },
+                    processFiles: true,
                     styles: {
-                        bundle: [
-                            '<%= fixturesPath %>/css/libs.css',
-                            '<%= fixturesPath %>/css/dev.css'
-                        ],
-                        test: '<%= fixturesPath %>/css/inline.css'
+                        st: '<%= StylePath %>/**/*.css',
                     },
                     sections: {
-                        views: '<%= fixturesPath %>/views/**/*.html',
-                        templates: '<%= fixturesPath %>/templates/**/*.html',
-                        layout: {
-                            header: '<%= fixturesPath %>/layout/header.html',
-                            footer: '<%= fixturesPath %>/layout/footer.html'
-                        }
+                        header: '<%= TemplatePath %>/common/header.html',
+                        footer: '<%= TemplatePath %>/common/footer.html',
+
+                        banner: '<%= TemplatePath %>/views/banner.html',
+                        main: '<%= TemplatePath %>/views/main.html',
+                        nav: '<%= TemplatePath %>/views/nav.html',
                     },
                     data: {
-                        // Data to pass to templates
                         version: "0.1.0",
-                        title: "html-builder",
+                        title: "test",
                     },
                 }
             }
         }
 
     });
-    grunt.loadNpmTasks('grunt-html-build');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-html-build');
     grunt.loadNpmTasks('grunt-spritesmith');
-    grunt.registerTask('default',['browserSync', 'watch', 'htmlbuild']);
+    grunt.registerTask('default',['browserSync', 'htmlbuild', 'watch']);
 }
