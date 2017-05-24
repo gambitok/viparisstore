@@ -308,7 +308,124 @@ main {
       }
     }
   }
+
+  ////////////////////////////////////////
+
+  .maincontent{
+
+    .buypro {
+
+      .row {
+        padding-top:10px;
+        padding-bottom: 10px;
+      }
+
+    }
+
+    .headpro {
+      background-color: #182d47;
+      margin-top:50px;
+      padding-top: 30px;
+      padding-bottom:30px;
+      h3 {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 10pt;
+      }
+    }
+    .contentpro {
+      padding-top: 20px;
+      padding-bottom:20px;
+      background-color: #f5f6f7;
+      .btnbuy {
+        text-transform: uppercase;
+        margin-bottom:10px;
+        border: none;
+        background-color: #eb2645;
+        color: white;
+        margin-left:30px;
+        width: 200px;
+        height: 50px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .footpro {
+      padding-top: 20px;
+      padding-bottom:20px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .menus {
+      margin-top:30px;
+      margin-bottom:20px;
+      label {
+        font-size: 14pt;
+        text-transform: uppercase;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      }
+      hr {
+        color: grey;
+      }
+    }
+
+      .mainpro {
+      margin-bottom: 50px;
+
+      .rec_pro {
+        .inpro {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          .laki {
+            margin-top: 20px;
+          }
+          .pm {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: white;
+            color: black;
+          }
+          .dgt {
+            width: 30px;
+            height: 30px;
+          }
+          .likerec {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .ttl {
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        h3 {
+          text-transform: uppercase;
+          color: #eb2645;
+        }
+        img {
+          width: 100px;
+          height: 100px;
+        }
+        span {
+          color: grey;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
+
 
 footer {
 

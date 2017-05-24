@@ -205,6 +205,84 @@ main {
         margin-right: auto;
         width: 160px;
         height: 40px; }
+  main .maincontent .buypro .row {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  main .maincontent .headpro {
+    background-color: #182d47;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    main .maincontent .headpro h3 {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-size: 10pt; }
+  main .maincontent .contentpro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5f6f7; }
+    main .maincontent .contentpro .btnbuy {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border: none;
+      background-color: #eb2645;
+      color: white;
+      margin-left: 30px;
+      width: 200px;
+      height: 50px; }
+    main .maincontent .contentpro img {
+      width: 20px;
+      height: 20px; }
+  main .maincontent .footpro {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    main .maincontent .footpro img {
+      width: 20px;
+      height: 20px; }
+  main .maincontent .menus {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    main .maincontent .menus label {
+      font-size: 14pt;
+      text-transform: uppercase; }
+    main .maincontent .menus img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px; }
+    main .maincontent .menus hr {
+      color: grey; }
+  main .maincontent .mainpro {
+    margin-bottom: 50px; }
+    main .maincontent .mainpro .rec_pro .inpro {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      main .maincontent .mainpro .rec_pro .inpro .laki {
+        margin-top: 20px; }
+      main .maincontent .mainpro .rec_pro .inpro .pm {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: white;
+        color: black; }
+      main .maincontent .mainpro .rec_pro .inpro .dgt {
+        width: 30px;
+        height: 30px; }
+      main .maincontent .mainpro .rec_pro .inpro .likerec {
+        width: 20px;
+        height: 20px; }
+    main .maincontent .mainpro .rec_pro .ttl {
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    main .maincontent .mainpro .rec_pro h3 {
+      text-transform: uppercase;
+      color: #eb2645; }
+    main .maincontent .mainpro .rec_pro img {
+      width: 100px;
+      height: 100px; }
+    main .maincontent .mainpro .rec_pro span {
+      color: grey;
+      font-size: 12px; }
 
 footer hr {
   background-color: #eb2645;
