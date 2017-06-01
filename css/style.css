@@ -21,7 +21,8 @@ header {
       list-style: none; }
     header .login a {
       text-transform: uppercase;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #000; }
   header .lang {
     margin-top: 30px; }
     header .lang img {
@@ -29,6 +30,7 @@ header {
       width: 25px;
       height: 15px; }
   header .rec {
+    padding: 0;
     width: 95px;
     background-color: #eb2645;
     height: 75px;
@@ -43,7 +45,7 @@ header {
         font-size: 8pt;
         position: absolute;
         top: 20%;
-        right: 1%; }
+        right: 25%; }
       header .rec a img {
         margin: 0;
         position: absolute;
@@ -127,9 +129,10 @@ main {
       padding-top: 10%; }
       main .main_content .sidebar span {
         color: #fff;
-        padding: 4% 4% 4%; }
+        padding: 4% 4%; }
       main .main_content .sidebar aside {
         padding-bottom: 10px;
+        padding-top: 5px;
         color: #fff;
         font-size: 11pt; }
       main .main_content .sidebar aside:before {
@@ -165,6 +168,7 @@ main {
       background-color: #fff;
       margin-left: 20px;
       padding: 20px 40px 35px 25px;
+      margin-bottom: 20px;
       width: 283px;
       height: 330px; }
       main .products .pro button {
@@ -368,14 +372,20 @@ footer .copy {
     height: 2px;
     margin-bottom: 2%;
     width: auto; }
-  footer .copy ul.list-inline li {
-    float: left;
-    list-style: none; }
-    footer .copy ul.list-inline li a {
-      padding-left: 40px;
-      padding-right: 0px;
-      color: lightgrey;
-      text-decoration: none;
-      font-size: 9pt; }
+  footer .copy .copyright {
+    padding: 0; }
+  footer .copy .credits {
+    padding: 0; }
+  footer .copy ul.list-inline {
+    margin-left: 5%; }
+    footer .copy ul.list-inline li {
+      float: right;
+      list-style: none; }
+      footer .copy ul.list-inline li a {
+        padding-left: 40px;
+        padding-right: 0px;
+        color: lightgrey;
+        text-decoration: none;
+        font-size: 9pt; }
 
 /*# sourceMappingURL=style.css.map */
