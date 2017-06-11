@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 
         htmlbuild: {
             dist: {
-                src: 'templates/index.html',
+                src: 'templates/*.html',
                 dest: './',
                 options: {
                     beautify: true,
@@ -63,9 +63,10 @@ module.exports = function(grunt) {
                     sections: {
                         header: '<%= TemplatePath %>/common/header.html',
                         footer: '<%= TemplatePath %>/common/footer.html',
-
                         banner: '<%= TemplatePath %>/views/banner.html',
                         main: '<%= TemplatePath %>/views/main.html',
+                        main_rec: '<%= TemplatePath %>/views/main_rec.html',
+                        main_pro: '<%= TemplatePath %>/views/main_pro.html',
                         nav: '<%= TemplatePath %>/views/nav.html',
                     },
                     data: {

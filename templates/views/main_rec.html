@@ -36,7 +36,7 @@
                         </div><hr>
                         <div class="row inpro">
                             <div class="col-lg-2">
-                                <img src="" alt="vend1">
+                                <img src="/img/rec/240.png" alt="vend1">
                             </div>
                             <div class="col-lg-4">
                                 Branchement intermittent 240 V<p>
@@ -45,9 +45,25 @@
                             <div class="col-lg-offset-2 col-lg-4">
                                 <div class="row sum">
                                     <div class="col-lg-6">
-                                        <button class="pm">+</button>
-                                        <input class="dgt" type="text" value="10" disabled>
-                                        <button class="pm">-</button>
+
+                                        <button class="pm" onclick="plus()">+</button>
+                                        <input id="count1" class="dgt" type="text" value="10" pattern="\d [0-9]">
+                                        <button class="pm" onclick="minus()">-</button>
+
+                                        <script type="text/javascript">
+                                            var count = document.getElementById("count1");
+                                            function plus(){
+                                                if ((parseInt(count.value) < 20)) {
+                                                    count.value=parseInt(count.value) + 1;
+                                                }
+                                            }
+                                            function minus(){
+                                                if ((parseInt(count.value) > 0)) {
+                                                    count.value=parseInt(count.value) - 1;
+                                                }
+                                            }
+                                        </script>
+
                                     </div>
                                     <div class="col-lg-6">
                                         00,00 Є НТ
@@ -55,12 +71,12 @@
                                 </div>
                                 <div class="row laki">
                                     <div class="col-lg-6">
-                                        <img src="" alt="like" class="likerec">
-                                        ajouter a ma liste
+                                        <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
+                                        ajouter a ma liste</a>
                                     </div>
                                     <div class="col-lg-6">
-                                        <img src="" alt="rec" class="likerec">
-                                        suprmer
+                                        <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
+                                        suprmer</a>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +88,7 @@
                     <div class="rec_pro">
                         <div class="row ttl">
                             <div class="col-lg-6">
-                                <h3>Vendeur1</h3>
+                                <h3>Vendeur2</h3>
                             </div>
                             <div class="col-lg-6">
                                 Frails de ivrasion OFFERT
@@ -81,7 +97,7 @@
                         </div><hr>
                         <div class="row inpro">
                             <div class="col-lg-2">
-                                <img src="" alt="vend1">
+                                <img class="" src="/img/rec/ipad.png" alt="vend1">
                             </div>
                             <div class="col-lg-4">
                                 Branchement intermittent 240 V<p>
@@ -90,9 +106,11 @@
                             <div class="col-lg-offset-2 col-lg-4">
                                 <div class="row sum">
                                     <div class="col-lg-6">
-                                        <button class="pm">+</button>
-                                        <input class="dgt" type="text" value="10" disabled>
-                                        <button class="pm">-</button>
+
+                                        <button class="pm" onclick="plus()">+</button>
+                                        <input id="count2" class="dgt" type="text" value="10">
+                                        <button class="pm" onclick="minus()">-</button>
+
                                     </div>
                                     <div class="col-lg-6">
                                         00,00 Є НТ
@@ -100,12 +118,12 @@
                                 </div>
                                 <div class="row laki">
                                     <div class="col-lg-6">
-                                        <img src="" alt="like" class="likerec">
-                                        ajouter a ma liste
+                                        <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
+                                        ajouter a ma liste</a>
                                     </div>
                                     <div class="col-lg-6">
-                                        <img src="" alt="rec" class="likerec">
-                                        suprmer
+                                        <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
+                                        suprmer</a>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +132,7 @@
                             <hr>
                             <div class="row inpro">
                                 <div class="col-lg-2">
-                                    <img src="" alt="vend1">
+                                    <img src="/img/rec/ipad.png" alt="vend1">
                                 </div>
                                 <div class="col-lg-4">
                                     Branchement intermittent 240 V<p>
@@ -123,9 +141,11 @@
                                 <div class="col-lg-offset-2 col-lg-4">
                                     <div class="row sum">
                                         <div class="col-lg-6">
-                                            <button class="pm">+</button>
-                                            <input class="dgt" type="text" value="10" disabled>
-                                            <button class="pm">-</button>
+
+                                            <button class="pm" onclick="plus()">+</button>
+                                            <input id="count3" class="dgt" type="text" value="10">
+                                            <button class="pm" onclick="minus()">-</button>
+
                                         </div>
                                         <div class="col-lg-6">
                                             00,00 Є НТ
@@ -133,12 +153,12 @@
                                     </div>
                                     <div class="row laki">
                                         <div class="col-lg-6">
-                                            <img src="" alt="like" class="likerec">
-                                            ajouter a ma liste
+                                            <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
+                                            ajouter a ma liste</a>
                                         </div>
                                         <div class="col-lg-6">
-                                            <img src="" alt="rec" class="likerec">
-                                            suprmer
+                                            <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
+                                            suprmer</a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,22 +192,22 @@
                             </div>
                         </div>
                         <div class="row">
-                            <button class="btnbuy">commander</button><p>
-                            <img src="" alt="back">Poursuivre vos achats
+                            <button class="btnbuy">Commander</button><p>
+                            <img src="/img/rec/back.png" alt="back">Poursuivre vos achats
                         </div>
                     </div>
                     <div class="row footpro">
                         <div class="row">
-                            <img src="" alt="like">
+                            <img src="/img/rec/like.png" alt="like">
                             Ajouter a une liste
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <img src="" alt="pr">
+                            <div class="col-lg-5">
+                                <img src="/img/rec/print.png" alt="pr">
                                 imprimer
                             </div>
-                            <div class="col-lg-6">
-                                <img src="" alt="ms">
+                            <div class="col-lg-7">
+                                <img src="/img/rec/mail.png" alt="ms">
                                 envoyer par mail
                             </div>
                         </div>

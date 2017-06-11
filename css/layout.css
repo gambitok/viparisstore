@@ -2,8 +2,6 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media (min-width: 768px) {
@@ -21,7 +19,7 @@
 @media (min-width: 1200px) {
   /* line 18, ../scss/layout.scss */
   .container {
-    width: 1272px;
+    width: 1304px;
   }
 }
 /* line 22, ../scss/layout.scss */

@@ -6,14 +6,14 @@
                     <h2> <a href="#">Accueil</a> > Presentation </h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row date-cat">
                 <div class="col-lg-5">
                     Palais des congres de Paris du 01/10/2016 au 16/11/2016
                 </div>
-                <div class="col-lg-offset-1 col-lg-3">
+                <div class="col-lg-offset-1 col-lg-3 date1">
                     Fermeture catalogue jj/mm/aaaa
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 date2">
                     Date de majoration jj/mm/aaaa
                 </div>
             </div>
@@ -22,21 +22,103 @@
         <div class="row main_content">
             <div class="col-lg-3">
                 <div class="sidebar">
-                    <span>Informations pratiques</span>
-                    <aside>Information pratiques</aside>
-                    <aside>Site de I'organisateur</aside>
-                    <aside>Telecharger le cataloge<p>
-                        de produits</aside>
-                    <aside>Telecharger le dossier technique</aside>
-                    <aside>Telecharger le dossier technique</aside>
-                    <img class="displayed" src="img/sidebar-img.png" alt="SidebarImage">
+                    <div class="row side-title">
+                        <span>Informations pratiques</span>
+                    </div>
+                    <div class="row side-bar">
+                        <aside>Information pratiques</aside>
+                        <aside>Site de I'organisateur</aside>
+                        <aside>Telecharger le cataloge<p>
+                            de produits</aside>
+                        <aside>Telecharger le dossier technique</aside>
+                        <aside>Telecharger le dossier technique</aside>
+                    </div>
+                    <div class="row side-img">
+                        <img class="displayed" src="img/sidebar-img.png" alt="SidebarImage">
+                    </div>
                 </div>
             </div>
 
             <div class="col-lg-9">
                 <div class="row">
+
                     <div class="slide">
 
+                        <div class="mySlides">
+                            <div class="col-lg-4">
+                                <img class="imgslide" src="img/slider/slider_1.png">
+                            </div>
+                            <div class="col-lg-8">
+                                <h2>Title 1</h2>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusantium aliquid consequuntur deleniti exercitationem facere, illum,
+                                    inventore ipsa neque pariatur provident quaerat quisquam tempora.
+                                    Dolor hic laborum maiores mollitia nam, velit.</h3>
+                            </div>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="col-lg-4">
+                                <img class="imgslide" src="img/slider/slider_2.png">
+                            </div>
+                            <div class="col-lg-8">
+                                <h2>Title 2</h2>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusantium aliquid consequuntur deleniti exercitationem facere, illum,
+                                    inventore ipsa neque pariatur provident quaerat quisquam tempora.
+                                    Dolor hic laborum maiores mollitia nam, velit.</h3>
+                            </div>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="col-lg-4">
+                                <img class="imgslide" src="img/slider/slider_3.png">
+                            </div>
+                            <div class="col-lg-8">
+                                <h2>Title 3</h2>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusantium aliquid consequuntur deleniti exercitationem facere, illum,
+                                    inventore ipsa neque pariatur provident quaerat quisquam tempora.
+                                    Dolor hic laborum maiores mollitia nam, velit.</h3>
+                            </div>
+                        </div>
+
+                        <div class="w3-center w3-display-bottommiddle" style="width:100%">
+                            <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+                            <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                            <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                                showDivs(slideIndex += n);
+                            }
+
+                            function currentDiv(n) {
+                                showDivs(slideIndex = n);
+                            }
+
+                            function showDivs(n) {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("demo");
+                                if (n > x.length) {slideIndex = 1}
+                                if (n < 1) {slideIndex = x.length}
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                                }
+                                x[slideIndex-1].style.display = "block";
+                                dots[slideIndex-1].className += " w3-white";
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -44,31 +126,31 @@
 
         <div class="row products">
             <div class="container">
-                <h2>Nos suggestions</h2>
-                <div class="row">
+                <p class="Title">Nos suggestions</p>
+                <div class="row set_pro">
                     <div class="col-lg-2 pro">
-                        <img class="displayed" src="#" alt=""><p>
+                        <img class="displayed" src="img/products/pikachu.png" alt=""><p>
                         <h2>Tablette Ipad 2</h2><br>
                         <h3>en stock</h3><p>
                         <h4>A parte de <span>00,00 € NT</span></h4><p>
                         <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                     </div>
                     <div class="col-lg-2 pro">
-                        <img class="displayed" src="#" alt=""><p>
+                        <img class="displayed" src="img/products/pikachu.png" alt=""><p>
                         <h2>Mur vegetal en contre plaque</h2><p>
                         <h3>en stock</h3><p>
                         <h4>A parte de <span>00,00 € NT</span></h4><p>
                         <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                     </div>
                     <div class="col-lg-2 pro">
-                        <img class="displayed" src="#" alt=""><p>
+                        <img class="displayed" src="img/products/pikachu.png" alt=""><p>
                         <h2>Corbeile de fruits</h2><br>
                         <h3>en stock</h3><p>
                         <h4>A parte de <span>00,00 € NT</span></h4><p>
                         <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                     </div>
                     <div class="col-lg-2 pro">
-                        <img class="displayed"  src="#" alt=""><p>
+                        <img class="displayed"  src="img/products/pikachu.png" alt=""><p>
                         <h2>Nom di produit sur plusieurs lignes</h2><p>
                         <h3>en stock</h3><p>
                         <h4>A parte de <span>00,00 € NT</span></h4><p>

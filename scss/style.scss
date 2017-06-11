@@ -13,38 +13,69 @@ html, body {
 
 header {
   width: 100% ;
-  height: 75px;
+  height: 80px;
   font-size: 8pt;
+
+  .col-lg-1, .col-lg-2 {
+    padding: 0;
+  }
 
   .logo {
       img{
         height: 75px;
-        padding-left:12px;
-        padding-top:12px;
+        padding-left:9px;
+        padding-top:8px;
     }
   }
 
   .login {
+    .col-lg-6 {
+      padding: 0;
+    }
     margin-top: 30px;
+    padding-left:10px;
     ul {
       .colon{
         list-style: none;
+          a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #000;
+          }
+      }
+          .account:before {
+            content: "";
+            display: block;
+            background: url("../img/acc.png") no-repeat;
+            background-size: cover;
+            width: 10px;
+            height:10px;
+            float: left;
+          }
 
-      }
+          .like:before {
+            content: "";
+            display: block;
+            background: url("../img/like.png") no-repeat;
+            background-size: cover;
+            width: 10px;
+            height:10px;
+            float: left;
+          }
+
     }
-      a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #000;
-      }
   }
 
   .lang {
+    .row {
+      padding-left: 30px;;
+    }
     margin-top: 30px;
     img {
-      margin-left:5%;
-      width: 25px;
-      height: 15px;
+      padding: 0;
+      margin-left:5px;
+      width: 22px;
+      height: 14px;
     }
   }
 
@@ -52,7 +83,7 @@ header {
     padding: 0;
     width: 95px;
     background-color: #eb2645;
-    height: 75px;
+    height: 80px;
     color: #ffffff;
     float:right;
 
@@ -65,7 +96,7 @@ header {
           font-size: 8pt;
           position: absolute;
           top: 20%;
-          right: 25%;
+          right: 20%;
         }
         img {
           margin: 0;
@@ -77,26 +108,21 @@ header {
     }
   }
 }
-//
-//.tablebanner {
-//    display: table;
-//    overflow: hidden;
-//}
 
 .banner {
     width: 100%;
-    height: 234px;
+    height: 250px;
     background-color: #fde626;
     background-image:url("../img/banner.png");
     background-position: top;
     background-repeat: no-repeat;
     float: left;
-    border: 6px solid white;
+    border: 10px solid white;
 
     h1 {
-      //display: table-cell;
-      //vertical-align: middle;
-      //position: relative;
+      padding-top: 130px;
+      text-align: center;
+      position: relative;
       font-weight: bold;
       font-size: 26pt;
       color: #000;
@@ -104,75 +130,120 @@ header {
 }
 
 nav {
-
   .navigation {
+
     background: #182d47;
-    height: 65px;
-    padding: 8px;
+    height: 66px;
+    padding: 5px;
     list-style: none;
+    padding-left:50px;
 
-    ul.list-inline {
-      li {
-        float: left;
-        list-style: none;
-        margin-right:1%;
-        display: table;
 
-        a {
-          font-size: 9pt;
-          display: table-cell;
-          vertical-align: middle;
-          padding: 10px 15px;
-          color: #fff;
-          text-decoration: none;
-          position: relative;
-          text-transform: uppercase;
-          text-align: center;
-          height: 61px;
+    .col-lg-9 {
+      padding: 0;
+    }
 
-            &:hover {
-              background: #fff;
-              color: #182d47;
-              //text-decoration: none;
-              //background-color: #fff;
-              //color: #182d47;
-            }
-        }
+    p {
+      color: #eb2645;
+      padding-bottom:15px;
+    }
+
+    .menu {
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+
+    .menu-drop {
+      padding-left:28px;
+      z-index:99999999;
+      background: #fff;
+      .row {
+        padding: 0;
       }
     }
 
+    .menu li {
+      padding-bottom:5px;
+      float: left;
+      width: 124px;
+      background: #182d47;
+      display: table;
+    }
+
+    .menu li:hover {
+      background: #ffffff;
+      a {
+        color: #182d47;
+      }
+    }
+
+    .menu-drop li {
+      background: #ffffff;
+      width: 300px;
+    }
+
+    .menu-drop a,
+    .menu a {
+      text-align: center;
+      //display: block;
+      height: 56px;
+      text-decoration: none;
+      display: table-cell;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 9pt;
+    }
+
+    .menu li ul {
+      padding-top:25px;
+      position: absolute;
+      top: 58px;
+      left:-50px;
+      width: 140%;
+      height: 215px;
+      display: none;
+      li {
+        float: none;
+        //display: block;
+      }
+    }
+
+    .menu li:hover ul{
+      display: block;
+    }
+
     .search {
+      padding-top:5px;
 
       input[type="search"] {
-        padding-left:50px;
-        margin-left:7px;
-        width: 282px;
+        padding-left:43px;
+        width: 295px;
         height: 47px;
       }
 
       input[type="submit"] {
         background: #fff;
         border: none;
-        margin: 10px 0 0 20px;
+        margin: 13px 0 0 18px;
         position: absolute;
-        height: 25px;
-        width: 25px;
-        background-image: url("../img/pikachu.png");
+        height: 18px;
+        width: 18px;
+        background-image: url("../img/search.png");
         background-size: cover;
       }
       //.inputsearch:focus::-webkit-input-placeholder {color:transparent}
     }
   }
 }
-
+////////////////////////////////////////////////////////////////////////////////main
 main {
   width: 100%;
-
   .navig {
     h2 {
       font-size: 12pt;
       a {
-
         text-decoration: none;
         color: #000;
         font-size: 12pt;
@@ -180,19 +251,19 @@ main {
     }
     height: 100px;
     .row {
-      padding: 20px 20px 0px 0px;
+      padding: 20px 0px 0px 2.5%;
     }
   }
 
   .main_content {
-    margin-bottom: 7%;
-
+    margin-bottom: 6.5%;
+/////////////////////////бокове меню
     .sidebar {
-      margin-left:28px;
-      padding-left:5%;
+      margin-left:10%;
+      padding-left:7%;
       background: #eb2645;
-      width: 276px;
-      height: 410px;
+      width: 292px;
+      height: 442px;
       padding-top:10%;
 
       span {
@@ -228,34 +299,52 @@ main {
           height: 160px;
         }
     }
-
+////////////////////слайдер
     .slide {
-      margin-left:35px;
+      margin-left:40px;
       margin-right:30px;
       background-color: #2b2e33;
-      height: 410px;
-    }
-  }
+      height: 442px;
+      .mySlides {display:none}
 
+      .w3-left, .w3-right, .w3-badge {cursor:pointer}
+
+      .w3-badge {height:13px;width:13px;padding:0}
+
+      .imgslide {
+        height: 442px;
+      }
+      .col-lg-4 {
+        padding: 0;
+      }
+    }
+
+  }
+//////////////////////меню продукції
   .products {
 
     padding-top:30px;
-    padding-bottom: 60px;
+    padding-bottom: 68px;
     background-color: #f5f6f7;
 
-    h2 {
-      padding-bottom:2%;
+    p.Title {
+      padding: 1% 1% 1% 3%;
       text-transform: uppercase;
-      font-size:11pt
+      font-size:10pt
+    }
+
+    .set_pro {
+      margin-left: 1.2%;
     }
 
     .pro {
       background-color: #fff;
-      margin-left:20px;
+      margin-left:1.5%;
       padding: 20px 40px 35px 25px;
       margin-bottom:20px;
-      width: 283px;
+      width: 275px;
       height: 330px;
+
 
       button {
         background-color: #eb2645;
@@ -266,13 +355,15 @@ main {
       h2 {
         margin-top:20px;
         font-weight: bold;
+        padding-bottom:2%;
+        font-size:12pt
       }
 
       h3 {
         text-transform: uppercase;
         font-size: 10pt;
         margin-top:10px;
-        color: gray;
+        color: grey;
       }
 
       h3:before {
@@ -280,9 +371,10 @@ main {
         display: block;
         background: url("../img/point.png") no-repeat;
         background-size: cover;
-        width: 15px;
-        height:15px;
+        width: 8px;
+        height:8px;
         float: left;
+        margin: 4px;
       }
 
       h4 {
@@ -319,17 +411,15 @@ main {
     }
   }
 
-  ////////////////////////////////////////
+  ////////////////////////////////////////recycle
 
   .maincontent{
 
     .buypro {
-
       .row {
         padding-top:10px;
         padding-bottom: 10px;
       }
-
     }
 
     .headpro {
@@ -348,6 +438,11 @@ main {
       padding-top: 20px;
       padding-bottom:20px;
       background-color: #f5f6f7;
+
+      p {
+        text-align: center;
+      }
+
       .btnbuy {
         text-transform: uppercase;
         margin-bottom:10px;
@@ -366,6 +461,15 @@ main {
     .footpro {
       padding-top: 20px;
       padding-bottom:20px;
+
+      .col-lg-5,
+      .col-lg-7 {
+          padding: 0;
+        padding-left:10px;
+        text-transform: uppercase;
+        font-size: 9pt;
+      }
+
       img {
         width: 20px;
         height: 20px;
@@ -390,9 +494,10 @@ main {
     }
 
       .mainpro {
-      margin-bottom: 50px;
+      //margin-bottom: 50px;
 
       .rec_pro {
+
         .inpro {
           margin-top: 20px;
           margin-bottom: 20px;
@@ -416,16 +521,20 @@ main {
           }
         }
         .ttl {
-          margin-top: 20px;
+          margin-top: 60px;
           margin-bottom: 10px;
+          .col-lg-6 {
+            padding: 0;
+          }
         }
         h3 {
           text-transform: uppercase;
           color: #eb2645;
         }
-        img {
-          width: 100px;
-          height: 100px;
+        .likeimg {
+          width: 120px;
+          height: 120px;
+          border: 1px solid grey;
         }
         span {
           color: grey;
@@ -444,7 +553,7 @@ footer {
     border: none;
     height: 3px;
     margin-top:12px;
-    width: 17px;
+    width: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -470,12 +579,18 @@ footer {
       text-decoration: none;
     }
   }
-
+/////////////////////////////////строка FAQ(red)
   .faq {
     background-color: #eb2645;
     color:#fff;
-    padding-top:27px;
-    height: 70px;
+    padding-top:30px;
+    height: 73px;
+
+    .col-lg-1, .col-lg-2 {padding: 0;}
+
+    h2 {
+      margin-left:-10px;
+    }
 
     a {
       font-size: 9pt;
@@ -483,14 +598,17 @@ footer {
       text-decoration: none;
       text-transform: uppercase;
     }
+
     img {
-      width: 15px;
-      height: 15px;
+      margin-right:10px;
+      margin-left:-60px;
+      width: auto;
+        height: 15px;
     }
   }
-
+///////////////////////////строка інфи+соц(blue)
   .info {
-    padding: 3% 3% 0 0;
+    padding: 3.5% 3% 0 0;
     background-color: #182d47;
     color:#fff;
 
@@ -546,7 +664,7 @@ footer {
         padding-left:13%;
       }
   }
-
+/////////////////////////строка копірайта(blue)
   .copy {
     padding: 1% 4% 2% 4%;
     background-color: #182d47;
