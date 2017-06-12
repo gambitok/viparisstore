@@ -32,7 +32,7 @@ header {
     .col-lg-6 {
       padding: 0;
     }
-    margin-top: 30px;
+    margin-top: 35px;
     padding-left:10px;
     ul {
       .colon{
@@ -42,6 +42,9 @@ header {
           text-decoration: none;
           color: #000;
           }
+        a:hover {
+          color: #182d47;
+        }
       }
           .account:before {
             content: "";
@@ -49,8 +52,11 @@ header {
             background: url("../img/acc.png") no-repeat;
             background-size: cover;
             width: 10px;
-            height:10px;
+            height:12px;
             float: left;
+            margin-right:2%;
+
+            margin-top:-3%;
           }
 
           .like:before {
@@ -58,11 +64,11 @@ header {
             display: block;
             background: url("../img/like.png") no-repeat;
             background-size: cover;
-            width: 10px;
+            width: 12px;
             height:10px;
             float: left;
+            margin-right:2%;
           }
-
     }
   }
 
@@ -70,7 +76,7 @@ header {
     .row {
       padding-left: 30px;;
     }
-    margin-top: 30px;
+    margin-top: 33px;
     img {
       padding: 0;
       margin-left:5px;
@@ -121,7 +127,7 @@ header {
     border: 10px solid white;
 
     h1 {
-      padding-top: 130px;
+      padding-top: 160px;
       text-align: center;
       position: relative;
       font-weight: bold;
@@ -138,7 +144,6 @@ nav {
     padding: 5px;
     list-style: none;
     padding-left:50px;
-
 
     .col-lg-9 {
       padding: 0;
@@ -167,7 +172,7 @@ nav {
     .menu li {
       padding-bottom:5px;
       float: left;
-      width: 124px;
+      width: 134px;
       background: #182d47;
       display: table;
     }
@@ -251,6 +256,12 @@ main {
         color: #000;
         font-size: 12pt;
       }
+      a:hover {
+          color: #182d47;
+      }
+      span {
+        color: #eb2645;
+      }
     }
   }
 
@@ -258,6 +269,31 @@ main {
     padding-top:1.5%;
     padding-bottom:0.5%;
     padding-left:2.5%;
+    .col-lg-3 {
+      padding-left:2.5%;
+    }
+
+      .date1:before {
+        content: "";
+        display: block;
+        background: url("../img/date2.png") no-repeat;
+        background-size: cover;
+        width: 18px;
+        height:20px;
+        float: left;
+        margin-right:5%;
+      }
+
+    .date2:before {
+      content: "";
+      display: block;
+      background: url("../img/date1.png") no-repeat;
+      background-size: cover;
+      width: 27px;
+      height: 20px;
+      float: left;
+      margin-right:5%;
+    }
   }
 
   .main_content {
@@ -268,12 +304,25 @@ main {
       padding-left:7%;
       background: #eb2645;
       width: 292px;
-      height: 452px;
+      height: 462px;
       padding-top:10%;
+
+      .side-bar {
+        margin-top:5%;
+      }
 
       span {
         color:#fff;
         padding: 4% 4%;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #182d47;
       }
 
         aside {
@@ -295,13 +344,10 @@ main {
         }
 
         img.displayed {
-          margin-top:4%;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-
+          margin-top:9%;
+          margin-left:15%;
           width: 120px;
-          height: 160px;
+          height: 170px;
         }
     }
 ////////////////////слайдер
@@ -309,7 +355,7 @@ main {
       margin-left:40px;
       margin-right:30px;
       background-color: #2b2e33;
-      height: 452px;
+      height: 462px;
       .mySlides {display:none}
 
       .w3-left, .w3-right, .w3-badge {cursor:pointer}
@@ -317,7 +363,7 @@ main {
       .w3-badge {height:13px;width:13px;padding:0}
 
       .imgslide {
-        height: 452px;
+        height: 462px;
       }
       .col-lg-4 {
         padding: 0;
@@ -553,7 +599,7 @@ main {
       }
 
       a {
-        text-decoration: none;
+        text-decoration: none
       }
 
       .rowinrow {
@@ -596,10 +642,20 @@ main {
     .pro_items {
       margin: auto;
       text-align: center;
-      .btn_cat {
+
+      .btn_cat1 {
         width: 20px;
         height: 20px;
         border: none;
+        background: url("../img/products/prev.png") no-repeat;
+        background-size: cover;
+      }
+      .btn_cat2 {
+        width: 20px;
+        height: 20px;
+        border: none;
+        background: url("../img/products/next.png") no-repeat;
+        background-size: cover;
       }
     }
 
@@ -706,9 +762,26 @@ main {
 
       .contentpro_und {
 
-        p {
-          text-align: center;
+        a {
           font-size: 10pt;
+          text-decoration: none;
+          color: black;
+        }
+
+        a:before {
+          content: "";
+          display: block;
+          background: url("../img/rec/like.png") no-repeat;
+          background-size: cover;
+          float: left;
+          width: 16px;
+          height: 15px;
+          margin-right:5%;
+          margin-left:20%;
+        }
+
+        a:hover {
+          color: grey;
         }
       }
 
@@ -719,6 +792,11 @@ main {
           text-transform: uppercase;
           font-weight: bold;
         }
+      }
+
+      .col-lg-5 {
+          text-align: right;
+        padding-right:5%;
       }
 
       p {
@@ -826,6 +904,7 @@ main {
           margin-bottom: 20px;
 
           .vend {
+            border: 1px solid grey;
             height: 100px;
             width: 100px;
           }
@@ -859,6 +938,9 @@ main {
           .col-lg-6 {
             padding: 0;
           }
+          .righttext {
+            text-align: right;
+          }
         }
 
         h3 {
@@ -876,14 +958,19 @@ main {
           color: black;
         }
 
+        a:hover {
+          color: grey;
+        }
+
         .alike:before {
           content: "";
           display: block;
           background: url("../img/rec/like.png") no-repeat;
           background-size: cover;
           float: left;
-          width: 25px;
-          height: 25px;
+          width: 16px;
+          height: 15px;
+          margin-right:5%;
         }
 
         .arec:before {
@@ -892,8 +979,9 @@ main {
           background: url("../img/rec/like.png") no-repeat;
           background-size: cover;
           float: left;
-          width: 25px;
-          height: 25px;
+          width: 16px;
+          height: 15px;
+          margin-right:5%;
         }
 
         span {
@@ -956,6 +1044,10 @@ footer {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
+    }
+
+    a:hover {
+      color: #182d47;
     }
 
     img {
@@ -1031,6 +1123,9 @@ footer {
 
       .group {
         padding-left:20%;
+        a:hover {
+          color:white;
+        }
       }
   }
 /////////////////////////строка копірайта(blue)
@@ -1068,6 +1163,9 @@ footer {
             text-decoration: none;
             font-size: 9pt;
           }
+        a:hover {
+          color: grey;
+        }
        }
     }
   }
