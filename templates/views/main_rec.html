@@ -1,28 +1,28 @@
 <main>
     <div class="container">
-        <div class="navig">
-            <div class="row">
+
+            <div class="row navig">
                 <div class="col-lg-4">
-                    <a href="#">Accueil</a> > <a href="">Presentation</a> > Votre panner
+                    <a href="#">Accueil</a> > <a href="#">Presentation</a> > Votre panner
                 </div>
             </div>
-            <div class="row">
+            <div class="row date-cat">
                 <div class="col-lg-5">
                     Palais des congres de Paris du 01/10/2016 au 16/11/2016
                 </div>
-                <div class="col-lg-offset-1 col-lg-3">
+                <div class="col-lg-offset-1 col-lg-3 date1">
                     Fermeture catalogue jj/mm/aaaa
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 date2">
                     Date de majoration jj/mm/aaaa
                 </div>
             </div>
+
+        <div class="row menus2">
+            <img src="" alt="Back">
+            <label>Votre panier</label><hr>
         </div>
-        <div class="maincontent">
-            <div class="row menus">
-                <img src="" alt="Back">
-                <label>Votre panier</label>
-            </div><hr>
+
             <div class="row mainpro">
                 <div class="col-lg-9">
                     <div class="rec_pro">
@@ -36,7 +36,7 @@
                         </div><hr>
                         <div class="row inpro">
                             <div class="col-lg-2">
-                                <img src="/img/rec/240.png" alt="vend1">
+                                <img class="vend" src="img/rec/240.png" alt="vend1">
                             </div>
                             <div class="col-lg-4">
                                 Branchement intermittent 240 V<p>
@@ -71,12 +71,12 @@
                                 </div>
                                 <div class="row laki">
                                     <div class="col-lg-6">
-                                        <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
-                                        ajouter a ma liste</a>
+                                        <a class="alike" href="">
+                                            ajouter a ma liste</a>
                                     </div>
                                     <div class="col-lg-6">
-                                        <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
-                                        suprmer</a>
+                                        <a class="arec" href="">
+                                            suprmer</a>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
                         </div><hr>
                         <div class="row inpro">
                             <div class="col-lg-2">
-                                <img class="" src="/img/rec/ipad.png" alt="vend1">
+                                <img class="vend" src="img/rec/ipad.png" alt="vend1">
                             </div>
                             <div class="col-lg-4">
                                 Branchement intermittent 240 V<p>
@@ -107,9 +107,23 @@
                                 <div class="row sum">
                                     <div class="col-lg-6">
 
-                                        <button class="pm" onclick="plus()">+</button>
+                                        <button class="pm" onclick="plus2()">+</button>
                                         <input id="count2" class="dgt" type="text" value="10">
-                                        <button class="pm" onclick="minus()">-</button>
+                                        <button class="pm" onclick="minus2()">-</button>
+
+                                        <script type="text/javascript">
+                                            var count2 = document.getElementById("count2");
+                                            function plus2(){
+                                                if ((parseInt(count2.value) < 20)) {
+                                                    count2.value=parseInt(count2.value) + 1;
+                                                }
+                                            }
+                                            function minus2(){
+                                                if ((parseInt(count2.value) > 0)) {
+                                                    count2.value=parseInt(count2.value) - 1;
+                                                }
+                                            }
+                                        </script>
 
                                     </div>
                                     <div class="col-lg-6">
@@ -118,12 +132,12 @@
                                 </div>
                                 <div class="row laki">
                                     <div class="col-lg-6">
-                                        <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
-                                        ajouter a ma liste</a>
+                                        <a class="alike" href="">
+                                            ajouter a ma liste</a>
                                     </div>
                                     <div class="col-lg-6">
-                                        <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
-                                        suprmer</a>
+                                        <a class="arec" href="">
+                                            suprmer</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +146,7 @@
                             <hr>
                             <div class="row inpro">
                                 <div class="col-lg-2">
-                                    <img src="/img/rec/ipad.png" alt="vend1">
+                                    <img class="vend" src="img/rec/ipad.png" alt="vend1">
                                 </div>
                                 <div class="col-lg-4">
                                     Branchement intermittent 240 V<p>
@@ -142,9 +156,23 @@
                                     <div class="row sum">
                                         <div class="col-lg-6">
 
-                                            <button class="pm" onclick="plus()">+</button>
+                                            <button class="pm" onclick="plus3()">+</button>
                                             <input id="count3" class="dgt" type="text" value="10">
-                                            <button class="pm" onclick="minus()">-</button>
+                                            <button class="pm" onclick="minus3()">-</button>
+
+                                            <script type="text/javascript">
+                                                var count3 = document.getElementById("count3");
+                                                function plus3(){
+                                                    if ((parseInt(count3.value) < 20)) {
+                                                        count3.value=parseInt(count3.value) + 1;
+                                                    }
+                                                }
+                                                function minus3(){
+                                                    if ((parseInt(count3.value) > 0)) {
+                                                        count3.value=parseInt(count3.value) - 1;
+                                                    }
+                                                }
+                                            </script>
 
                                         </div>
                                         <div class="col-lg-6">
@@ -153,11 +181,11 @@
                                     </div>
                                     <div class="row laki">
                                         <div class="col-lg-6">
-                                            <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
+                                            <a class="alike" href="">
                                             ajouter a ma liste</a>
                                         </div>
                                         <div class="col-lg-6">
-                                            <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
+                                            <a class="arec" href="">
                                             suprmer</a>
                                         </div>
                                     </div>
@@ -173,31 +201,32 @@
                     </div>
                     <div class="row contentpro">
                         <div class="row">
-                            <div class="col-lg-6">
-                                Ht soumis TVA<p>
-                                Estimation ilvraison
+                            <div class="col-lg-7">
+                                <p>Ht soumis TVA</p>
+                                <p>Estimation ilvraison</p>
                             </div>
-                            <div class="col-lg-6">
-                                3458,66 Є<p>
-                                45,99 Є
+                            <div class="col-lg-5">
+                                <p>3458,66 €</p>
+                                <p>45,99 €</p>
                             </div>
                         </div>
                         <div class="row">
                             <hr>
-                            <div class="col-lg-6">
-                                <p>Total<p>
+                            <div class="col-lg-7">
+                                <span>Total</span>
                             </div>
-                            <div class="col-lg-6">
-                                3458,66 Є<p>
+                            <div class="col-lg-5">
+                                <p>3458,66 €</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row contentpro_und">
                             <button class="btnbuy">Commander</button><p>
-                            <img src="/img/rec/back.png" alt="back">Poursuivre vos achats
+                            <img src="/img/rec/back.png" alt="back">
+                            Poursuivre vos achats
                         </div>
                     </div>
                     <div class="row footpro">
-                        <div class="row">
+                        <div class="row footpro_aj">
                             <img src="/img/rec/like.png" alt="like">
                             Ajouter a une liste
                         </div>
@@ -214,44 +243,35 @@
                     </div>
                 </div>
             </div>
+
             <div class="row products">
                 <div class="container">
-                    <h2>Nos suggestions</h2>
-                    <div class="row">
+                    <p class="Title">Comleter votre commande</p>
+                    <div class="row set_pro">
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt="">
-                            <p>
+                            <img class="displayed" src="img/products/pikachu.png" alt=""><p>
                             <h2>Tablette Ipad 2</h2><br>
-                            <h3>en stock</h3>
-                            <p>
-                            <h4>A parte de <span>00,00 € NT</span></h4>
-                            <p>
-                                <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <h3>en stock</h3><p>
+                            <h4>A parte de <span>00,00 € NT</span></h4><p>
+                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt="">
-                            <p>
-                            <h2>Mur vegetal en contre plaque</h2>
-                            <p>
-                            <h3>en stock</h3>
-                            <p>
-                            <h4>A parte de <span>00,00 € NT</span></h4>
-                            <p>
-                                <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <img class="displayed" src="img/products/pikachu.png" alt=""><p>
+                            <h2>Corbeile de fruits</h2><p>
+                            <h3>en stock</h3><p>
+                            <h4>A parte de <span>00,00 € NT</span></h4><p>
+                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                         </div>
                         <div class="col-lg-2 pro">
-                            <img class="displayed" src="#" alt="">
-                            <p>
-                            <h2>Corbeile de fruits</h2><br>
-                            <h3>en stock</h3>
-                            <p>
-                            <h4>A parte de <span>00,00 € NT</span></h4>
-                            <p>
-                                <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <img class="displayed" src="img/products/pikachu.png" alt=""><p>
+                            <h2>Tablette Ipad 2</h2><br>
+                            <h3>en stock</h3><p>
+                            <h4>A parte de <span>00,00 € NT</span></h4><p>
+                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 </main>

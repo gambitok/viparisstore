@@ -38,6 +38,27 @@
                     <img src="img/recycle.png" alt="Recycle">
                     <label class="count">10</label>
                 </a>
+                    <div class="row menu-rec-drop">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6"></div>
+                            </div>
+                            <div class="row">
+                                <button class="btnbuy">Commander</button>
+                                <p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row">
+                                asdsaddasd
+                            </div>
+                            <div class="row">
+                                <button class="btnbuy">Void le panner</button>
+                                <p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,45 +114,162 @@
     </nav>
     <main>
         <div class="container">
-            <div class="navig">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <a href="#">Accueil</a> > <a href="">Presentation</a> > Votre panner
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-5">
-                        Palais des congres de Paris du 01/10/2016 au 16/11/2016
-                    </div>
-                    <div class="col-lg-offset-1 col-lg-3">
-                        Fermeture catalogue jj/mm/aaaa
-                    </div>
-                    <div class="col-lg-3">
-                        Date de majoration jj/mm/aaaa
-                    </div>
+
+            <div class="row navig">
+                <div class="col-lg-4">
+                    <a href="#">Accueil</a> > <a href="#">Presentation</a> > Votre panner
                 </div>
             </div>
-            <div class="maincontent">
-                <div class="row menus">
-                    <img src="" alt="Back">
-                    <label>Votre panier</label>
+            <div class="row date-cat">
+                <div class="col-lg-5">
+                    Palais des congres de Paris du 01/10/2016 au 16/11/2016
                 </div>
+                <div class="col-lg-offset-1 col-lg-3 date1">
+                    Fermeture catalogue jj/mm/aaaa
+                </div>
+                <div class="col-lg-3 date2">
+                    Date de majoration jj/mm/aaaa
+                </div>
+            </div>
+
+            <div class="row menus2">
+                <img src="" alt="Back">
+                <label>Votre panier</label>
                 <hr>
-                <div class="row mainpro">
-                    <div class="col-lg-9">
-                        <div class="rec_pro">
-                            <div class="row ttl">
-                                <div class="col-lg-6">
-                                    <h3>Vendeur1</h3>
+            </div>
+
+            <div class="row mainpro">
+                <div class="col-lg-9">
+                    <div class="rec_pro">
+                        <div class="row ttl">
+                            <div class="col-lg-6">
+                                <h3>Vendeur1</h3>
+                            </div>
+                            <div class="col-lg-6">
+                                Frails de ivrasion OFFERT
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row inpro">
+                            <div class="col-lg-2">
+                                <img class="vend" src="img/rec/240.png" alt="vend1">
+                            </div>
+                            <div class="col-lg-4">
+                                Branchement intermittent 240 V
+                                <p>
+                                    <span>REX Q12345</span>
+                            </div>
+                            <div class="col-lg-offset-2 col-lg-4">
+                                <div class="row sum">
+                                    <div class="col-lg-6">
+
+                                        <button class="pm" onclick="plus()">+</button>
+                                        <input id="count1" class="dgt" type="text" value="10" pattern="\d [0-9]">
+                                        <button class="pm" onclick="minus()">-</button>
+
+                                        <script type="text/javascript">
+                                            var count = document.getElementById("count1");
+
+                                            function plus() {
+                                                if ((parseInt(count.value) < 20)) {
+                                                    count.value = parseInt(count.value) + 1;
+                                                }
+                                            }
+
+                                            function minus() {
+                                                if ((parseInt(count.value) > 0)) {
+                                                    count.value = parseInt(count.value) - 1;
+                                                }
+                                            }
+                                        </script>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        00,00 Є НТ
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    Frails de ivrasion OFFERT
+                                <div class="row laki">
+                                    <div class="col-lg-6">
+                                        <a class="alike" href="">
+                                            ajouter a ma liste</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a class="arec" href="">
+                                            suprmer</a>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="rec_pro">
+                        <div class="row ttl">
+                            <div class="col-lg-6">
+                                <h3>Vendeur2</h3>
+                            </div>
+                            <div class="col-lg-6">
+                                Frails de ivrasion OFFERT
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row inpro">
+                            <div class="col-lg-2">
+                                <img class="vend" src="img/rec/ipad.png" alt="vend1">
+                            </div>
+                            <div class="col-lg-4">
+                                Branchement intermittent 240 V
+                                <p>
+                                    <span>REX Q12345</span>
+                            </div>
+                            <div class="col-lg-offset-2 col-lg-4">
+                                <div class="row sum">
+                                    <div class="col-lg-6">
+
+                                        <button class="pm" onclick="plus2()">+</button>
+                                        <input id="count2" class="dgt" type="text" value="10">
+                                        <button class="pm" onclick="minus2()">-</button>
+
+                                        <script type="text/javascript">
+                                            var count2 = document.getElementById("count2");
+
+                                            function plus2() {
+                                                if ((parseInt(count2.value) < 20)) {
+                                                    count2.value = parseInt(count2.value) + 1;
+                                                }
+                                            }
+
+                                            function minus2() {
+                                                if ((parseInt(count2.value) > 0)) {
+                                                    count2.value = parseInt(count2.value) - 1;
+                                                }
+                                            }
+                                        </script>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        00,00 Є НТ
+                                    </div>
+                                </div>
+                                <div class="row laki">
+                                    <div class="col-lg-6">
+                                        <a class="alike" href="">
+                                            ajouter a ma liste</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a class="arec" href="">
+                                            suprmer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" inpro>
                             <hr>
                             <div class="row inpro">
                                 <div class="col-lg-2">
-                                    <img src="/img/rec/240.png" alt="vend1">
+                                    <img class="vend" src="img/rec/ipad.png" alt="vend1">
                                 </div>
                                 <div class="col-lg-4">
                                     Branchement intermittent 240 V
@@ -142,22 +280,22 @@
                                     <div class="row sum">
                                         <div class="col-lg-6">
 
-                                            <button class="pm" onclick="plus()">+</button>
-                                            <input id="count1" class="dgt" type="text" value="10" pattern="\d [0-9]">
-                                            <button class="pm" onclick="minus()">-</button>
+                                            <button class="pm" onclick="plus3()">+</button>
+                                            <input id="count3" class="dgt" type="text" value="10">
+                                            <button class="pm" onclick="minus3()">-</button>
 
                                             <script type="text/javascript">
-                                                var count = document.getElementById("count1");
+                                                var count3 = document.getElementById("count3");
 
-                                                function plus() {
-                                                    if ((parseInt(count.value) < 20)) {
-                                                        count.value = parseInt(count.value) + 1;
+                                                function plus3() {
+                                                    if ((parseInt(count3.value) < 20)) {
+                                                        count3.value = parseInt(count3.value) + 1;
                                                     }
                                                 }
 
-                                                function minus() {
-                                                    if ((parseInt(count.value) > 0)) {
-                                                        count.value = parseInt(count.value) - 1;
+                                                function minus3() {
+                                                    if ((parseInt(count3.value) > 0)) {
+                                                        count3.value = parseInt(count3.value) - 1;
                                                     }
                                                 }
                                             </script>
@@ -169,193 +307,105 @@
                                     </div>
                                     <div class="row laki">
                                         <div class="col-lg-6">
-                                            <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
-                                        ajouter a ma liste</a>
+                                            <a class="alike" href="">
+                                            ajouter a ma liste</a>
                                         </div>
                                         <div class="col-lg-6">
-                                            <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
-                                        suprmer</a>
+                                            <a class="arec" href="">
+                                            suprmer</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="rec_pro">
-                            <div class="row ttl">
-                                <div class="col-lg-6">
-                                    <h3>Vendeur2</h3>
-                                </div>
-                                <div class="col-lg-6">
-                                    Frails de ivrasion OFFERT
-                                </div>
-
                             </div>
                             <hr>
-                            <div class="row inpro">
-                                <div class="col-lg-2">
-                                    <img class="" src="/img/rec/ipad.png" alt="vend1">
-                                </div>
-                                <div class="col-lg-4">
-                                    Branchement intermittent 240 V
-                                    <p>
-                                        <span>REX Q12345</span>
-                                </div>
-                                <div class="col-lg-offset-2 col-lg-4">
-                                    <div class="row sum">
-                                        <div class="col-lg-6">
-
-                                            <button class="pm" onclick="plus()">+</button>
-                                            <input id="count2" class="dgt" type="text" value="10">
-                                            <button class="pm" onclick="minus()">-</button>
-
-                                        </div>
-                                        <div class="col-lg-6">
-                                            00,00 Є НТ
-                                        </div>
-                                    </div>
-                                    <div class="row laki">
-                                        <div class="col-lg-6">
-                                            <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
-                                        ajouter a ma liste</a>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
-                                        suprmer</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" inpro>
-                                <hr>
-                                <div class="row inpro">
-                                    <div class="col-lg-2">
-                                        <img src="/img/rec/ipad.png" alt="vend1">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        Branchement intermittent 240 V
-                                        <p>
-                                            <span>REX Q12345</span>
-                                    </div>
-                                    <div class="col-lg-offset-2 col-lg-4">
-                                        <div class="row sum">
-                                            <div class="col-lg-6">
-
-                                                <button class="pm" onclick="plus()">+</button>
-                                                <input id="count3" class="dgt" type="text" value="10">
-                                                <button class="pm" onclick="minus()">-</button>
-
-                                            </div>
-                                            <div class="col-lg-6">
-                                                00,00 Є НТ
-                                            </div>
-                                        </div>
-                                        <div class="row laki">
-                                            <div class="col-lg-6">
-                                                <a href=""><img class="likeimg" src="/img/rec/like.png" alt="like" class="likerec">
-                                            ajouter a ma liste</a>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <a href=""><img class="likeimg" src="/img/rec/rec.png" alt="rec" class="likerec">
-                                            suprmer</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 buypro">
-                        <div class="row headpro">
-                            <h3>montant</h3>
-                        </div>
-                        <div class="row contentpro">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    Ht soumis TVA
-                                    <p>
-                                        Estimation ilvraison
-                                </div>
-                                <div class="col-lg-6">
-                                    3458,66 Є
-                                    <p>
-                                        45,99 Є
-                                </div>
-                            </div>
-                            <div class="row">
-                                <hr>
-                                <div class="col-lg-6">
-                                    <p>Total
-                                        <p>
-                                </div>
-                                <div class="col-lg-6">
-                                    3458,66 Є
-                                    <p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <button class="btnbuy">Commander</button>
-                                <p>
-                                    <img src="/img/rec/back.png" alt="back">Poursuivre vos achats
-                            </div>
-                        </div>
-                        <div class="row footpro">
-                            <div class="row">
-                                <img src="/img/rec/like.png" alt="like"> Ajouter a une liste
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <img src="/img/rec/print.png" alt="pr"> imprimer
-                                </div>
-                                <div class="col-lg-7">
-                                    <img src="/img/rec/mail.png" alt="ms"> envoyer par mail
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row products">
-                    <div class="container">
-                        <h2>Nos suggestions</h2>
+                <div class="col-lg-3 buypro">
+                    <div class="row headpro">
+                        <h3>montant</h3>
+                    </div>
+                    <div class="row contentpro">
                         <div class="row">
-                            <div class="col-lg-2 pro">
-                                <img class="displayed" src="#" alt="">
-                                <p>
-                                    <h2>Tablette Ipad 2</h2><br>
-                                    <h3>en stock</h3>
-                                    <p>
-                                        <h4>A parte de <span>00,00 € NT</span></h4>
-                                        <p>
-                                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <div class="col-lg-7">
+                                <p>Ht soumis TVA</p>
+                                <p>Estimation ilvraison</p>
                             </div>
-                            <div class="col-lg-2 pro">
-                                <img class="displayed" src="#" alt="">
-                                <p>
-                                    <h2>Mur vegetal en contre plaque</h2>
-                                    <p>
-                                        <h3>en stock</h3>
-                                        <p>
-                                            <h4>A parte de <span>00,00 € NT</span></h4>
-                                            <p>
-                                                <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                            <div class="col-lg-5">
+                                <p>3458,66 €</p>
+                                <p>45,99 €</p>
                             </div>
-                            <div class="col-lg-2 pro">
-                                <img class="displayed" src="#" alt="">
-                                <p>
-                                    <h2>Corbeile de fruits</h2><br>
-                                    <h3>en stock</h3>
-                                    <p>
-                                        <h4>A parte de <span>00,00 € NT</span></h4>
-                                        <p>
-                                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                        </div>
+                        <div class="row">
+                            <hr>
+                            <div class="col-lg-7">
+                                <span>Total</span>
+                            </div>
+                            <div class="col-lg-5">
+                                <p>3458,66 €</p>
+                            </div>
+                        </div>
+                        <div class="row contentpro_und">
+                            <button class="btnbuy">Commander</button>
+                            <p>
+                                <img src="/img/rec/back.png" alt="back"> Poursuivre vos achats
+                        </div>
+                    </div>
+                    <div class="row footpro">
+                        <div class="row footpro_aj">
+                            <img src="/img/rec/like.png" alt="like"> Ajouter a une liste
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="/img/rec/print.png" alt="pr"> imprimer
+                            </div>
+                            <div class="col-lg-7">
+                                <img src="/img/rec/mail.png" alt="ms"> envoyer par mail
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row products">
+                <div class="container">
+                    <p class="Title">Comleter votre commande</p>
+                    <div class="row set_pro">
+                        <div class="col-lg-2 pro">
+                            <img class="displayed" src="img/products/pikachu.png" alt="">
+                            <p>
+                                <h2>Tablette Ipad 2</h2><br>
+                                <h3>en stock</h3>
+                                <p>
+                                    <h4>A parte de <span>00,00 € NT</span></h4>
+                                    <p>
+                                        <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                        </div>
+                        <div class="col-lg-2 pro">
+                            <img class="displayed" src="img/products/pikachu.png" alt="">
+                            <p>
+                                <h2>Corbeile de fruits</h2>
+                                <p>
+                                    <h3>en stock</h3>
+                                    <p>
+                                        <h4>A parte de <span>00,00 € NT</span></h4>
+                                        <p>
+                                            <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                        </div>
+                        <div class="col-lg-2 pro">
+                            <img class="displayed" src="img/products/pikachu.png" alt="">
+                            <p>
+                                <h2>Tablette Ipad 2</h2><br>
+                                <h3>en stock</h3>
+                                <p>
+                                    <h4>A parte de <span>00,00 € NT</span></h4>
+                                    <p>
+                                        <button class="displayed" type="button"><h5>Voir le produit</h5></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     <footer>
