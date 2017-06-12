@@ -169,15 +169,17 @@ nav .navigation {
 main {
   width: 100%; }
   main .navig {
-    height: 100px; }
+    padding: 15px 0 0 2.5%; }
     main .navig h2 {
       font-size: 12pt; }
       main .navig h2 a {
         text-decoration: none;
         color: #000;
         font-size: 12pt; }
-    main .navig .row {
-      padding: 20px 0px 0px 2.5%; }
+  main .date-cat {
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    padding-left: 2.5%; }
   main .main_content {
     margin-bottom: 6.5%; }
     main .main_content .sidebar {
@@ -185,7 +187,7 @@ main {
       padding-left: 7%;
       background: #eb2645;
       width: 292px;
-      height: 442px;
+      height: 452px;
       padding-top: 10%; }
       main .main_content .sidebar span {
         color: #fff;
@@ -215,7 +217,7 @@ main {
       margin-left: 40px;
       margin-right: 30px;
       background-color: #2b2e33;
-      height: 442px; }
+      height: 452px; }
       main .main_content .slide .mySlides {
         display: none; }
       main .main_content .slide .w3-left, main .main_content .slide .w3-right, main .main_content .slide .w3-badge {
@@ -225,38 +227,39 @@ main {
         width: 13px;
         padding: 0; }
       main .main_content .slide .imgslide {
-        height: 442px; }
+        height: 452px; }
       main .main_content .slide .col-lg-4 {
         padding: 0; }
   main .products {
-    padding-top: 30px;
-    padding-bottom: 68px;
+    padding: 2.2% 0 5% 0;
     background-color: #f5f6f7; }
+    main .products .set_pro {
+      padding-left: 0.7%; }
     main .products p.Title {
-      padding: 1% 1% 1% 3%;
+      padding: 1% 1% 1% 3.4%;
       text-transform: uppercase;
-      font-size: 10pt; }
+      font-size: 10pt;
+      font-weight: bold; }
     main .products .set_pro {
       margin-left: 1.2%; }
     main .products .pro {
       background-color: #fff;
-      margin-left: 1.5%;
-      padding: 20px 40px 35px 25px;
-      margin-bottom: 20px;
-      width: 275px;
-      height: 330px; }
+      padding: 1.6% 3% 0 2.2%;
+      width: 290px;
+      height: 350px;
+      margin-left: 1.5%; }
       main .products .pro button {
         background-color: #eb2645;
         color: #fff;
         border: none; }
       main .products .pro h2 {
-        margin-top: 20px;
+        margin-top: 30px;
         font-weight: bold;
         padding-bottom: 2%;
         font-size: 12pt; }
       main .products .pro h3 {
         text-transform: uppercase;
-        font-size: 10pt;
+        font-size: 9pt;
         margin-top: 10px;
         color: grey; }
       main .products .pro h3:before {
@@ -269,7 +272,7 @@ main {
         float: left;
         margin: 4px; }
       main .products .pro h4 {
-        padding-top: 12px;
+        padding-top: 8px;
         font-size: 11pt; }
       main .products .pro h5 {
         text-transform: uppercase; }
@@ -280,35 +283,201 @@ main {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 160px;
+        width: 130px;
         height: 120px; }
       main .products .pro button.displayed {
-        margin-top: 10%;
+        margin-top: 10.5%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 160px;
-        height: 40px; }
-  main .maincontent .buypro .row {
+        width: 162px;
+        height: 38px; }
+  main .mainttl_prod h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12pt; }
+    main .mainttl_prod h3 span {
+      color: #eb2645; }
+  main .mainttl_prod .col-lg-1, main .mainttl_prod .col-lg-2, main .mainttl_prod .col-lg-3, main .mainttl_prod col-lg-4, main .mainttl_prod col-lg-6 {
+    padding: 0; }
+  main .mainttl_prod .col-lg-1 {
+    padding-left: 5px; }
+  main .mainttl_prod .btn_cat {
+    width: 18px;
+    height: 18px;
+    margin-right: 20%; }
+  main .main_prod {
+    margin-left: 4%;
+    margin-right: 3.5%;
+    margin-top: 1.2%; }
+    main .main_prod .sidettl_prod {
+      margin-bottom: 5%;
+      text-transform: uppercase;
+      font-weight: bold; }
+    main .main_prod .contextmenu {
+      background-color: #eb2645; }
+    main .main_prod hr {
+      margin-left: 10%;
+      margin-right: 10%; }
+    main .main_prod .cost, main .main_prod .category, main .main_prod .vendor {
+      padding-top: 5%;
+      padding-bottom: 5%; }
+      main .main_prod .cost p, main .main_prod .category p, main .main_prod .vendor p {
+        color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-transform: uppercase;
+        font-weight: bold; }
+    main .main_prod .plan {
+      padding-top: 14%;
+      padding-left: 5%;
+      padding-bottom: 5%;
+      background-color: #182d47;
+      color: white; }
+      main .main_prod .plan .col-lg-3, main .main_prod .plan .col-lg-9 {
+        padding: 0; }
+      main .main_prod .plan h3 {
+        font-weight: bold;
+        font-size: 13pt; }
+      main .main_prod .plan img {
+        border: 1px solid white;
+        width: 50px;
+        height: 35px; }
+      main .main_prod .plan p, main .main_prod .plan span {
+        margin-left: 2%;
+        margin-top: 6%;
+        margin-bottom: 5%; }
+      main .main_prod .plan span:before {
+        content: "";
+        display: block;
+        background: url("../img/down.png") no-repeat;
+        background-size: cover;
+        width: 8px;
+        height: 8px;
+        float: left;
+        margin: 4px; }
+  main .foot_prod {
+    color: white;
+    margin-bottom: 50px; }
+    main .foot_prod .empty {
+      height: 50px;
+      margin-right: 10%; }
+      main .foot_prod .empty .btnwtf {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        top: 25px;
+        left: 25px; }
+    main .foot_prod .foot_prod_row {
+      background-color: #182d47;
+      margin-right: 10%; }
+      main .foot_prod .foot_prod_row .col-lg-9 {
+        padding-top: 7%;
+        padding-left: 5%;
+        padding-bottom: 7%; }
+      main .foot_prod .foot_prod_row .col-lg-3 {
+        padding: 0; }
+      main .foot_prod .foot_prod_row a {
+        text-decoration: none; }
+      main .foot_prod .foot_prod_row .rowinrow {
+        background-color: #eb2645;
+        margin: 12% 10% 12% 7%;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        padding-top: 25px;
+        color: white; }
+  main .items_prod {
+    padding: 2.2% 0 5% 0; }
+    main .items_prod .hrpro {
+      width: 100%;
+      margin: 0; }
+    main .items_prod .hrpro1 {
+      width: 100%;
+      margin: 0; }
+    main .items_prod .hrpro1:before {
+      content: "";
+      display: block;
+      background: url("../img/products/triangle.png") no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      float: left; }
+    main .items_prod .pro_items {
+      margin: auto;
+      text-align: center; }
+      main .items_prod .pro_items .btn_cat {
+        width: 20px;
+        height: 20px; }
+    main .items_prod .pro {
+      background-color: #fff;
+      padding: 1.6% 3% 0 0;
+      width: 290px;
+      height: 350px; }
+      main .items_prod .pro button {
+        background-color: #eb2645;
+        color: #fff;
+        border: none; }
+      main .items_prod .pro h2 {
+        margin-top: 30px;
+        font-weight: bold;
+        padding-bottom: 2%;
+        font-size: 12pt; }
+      main .items_prod .pro h3 {
+        text-transform: uppercase;
+        font-size: 9pt;
+        margin-top: 10px;
+        color: grey; }
+      main .items_prod .pro h3:before {
+        content: "";
+        display: block;
+        background: url("../img/point.png") no-repeat;
+        background-size: cover;
+        width: 8px;
+        height: 8px;
+        float: left;
+        margin: 4px; }
+      main .items_prod .pro h4 {
+        padding-top: 8px;
+        font-size: 11pt; }
+      main .items_prod .pro h5 {
+        text-transform: uppercase; }
+      main .items_prod .pro span {
+        text-transform: uppercase;
+        font-weight: bold; }
+      main .items_prod .pro img.displayed {
+        display: block;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130px;
+        height: 120px;
+        border: 1px solid grey; }
+      main .items_prod .pro button.displayed {
+        margin-top: 6.5%;
+        width: 162px;
+        height: 38px; }
+  main .buypro .row {
     padding-top: 10px;
     padding-bottom: 10px; }
-  main .maincontent .headpro {
+  main .headpro {
     background-color: #182d47;
     margin-top: 50px;
     padding-top: 30px;
     padding-bottom: 30px; }
-    main .maincontent .headpro h3 {
+    main .headpro h3 {
       text-align: center;
       color: white;
       text-transform: uppercase;
       font-size: 10pt; }
-  main .maincontent .contentpro {
+  main .contentpro {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #f5f6f7; }
-    main .maincontent .contentpro p {
+    main .contentpro p {
       text-align: center; }
-    main .maincontent .contentpro .btnbuy {
+    main .contentpro .btnbuy {
       text-transform: uppercase;
       margin-bottom: 10px;
       border: none;
@@ -317,63 +486,64 @@ main {
       margin-left: 30px;
       width: 200px;
       height: 50px; }
-    main .maincontent .contentpro img {
+    main .contentpro img {
       width: 20px;
       height: 20px; }
-  main .maincontent .footpro {
+  main .footpro {
     padding-top: 20px;
     padding-bottom: 20px; }
-    main .maincontent .footpro .col-lg-5,
-    main .maincontent .footpro .col-lg-7 {
+    main .footpro .col-lg-5,
+    main .footpro .col-lg-7 {
       padding: 0;
       padding-left: 10px;
       text-transform: uppercase;
       font-size: 9pt; }
-    main .maincontent .footpro img {
+    main .footpro img {
       width: 20px;
       height: 20px; }
-  main .maincontent .menus {
-    margin-top: 30px;
+  main .menus {
     margin-bottom: 20px; }
-    main .maincontent .menus label {
-      font-size: 14pt;
-      text-transform: uppercase; }
-    main .maincontent .menus img {
+    main .menus hr {
+      color: grey;
+      margin-left: 3.8%;
+      margin-right: 3.8%; }
+    main .menus label {
+      font-size: 25pt;
+      margin-left: 3.7%; }
+    main .menus img {
       width: 30px;
       height: 30px;
       margin-right: 20px; }
-    main .maincontent .menus hr {
-      color: grey; }
-  main .maincontent .mainpro .rec_pro .inpro {
+  main .mainpro .rec_pro .inpro {
     margin-top: 20px;
     margin-bottom: 20px; }
-    main .maincontent .mainpro .rec_pro .inpro .laki {
+    main .mainpro .rec_pro .inpro .laki {
       margin-top: 20px; }
-    main .maincontent .mainpro .rec_pro .inpro .pm {
+    main .mainpro .rec_pro .inpro .pm {
       width: 30px;
       height: 30px;
       border: none;
       background-color: white;
       color: black; }
-    main .maincontent .mainpro .rec_pro .inpro .dgt {
+    main .mainpro .rec_pro .inpro .dgt {
       width: 30px;
       height: 30px; }
-    main .maincontent .mainpro .rec_pro .inpro .likerec {
+    main .mainpro .rec_pro .inpro .likerec {
       width: 20px;
       height: 20px; }
-  main .maincontent .mainpro .rec_pro .ttl {
+  main .mainpro .rec_pro .ttl {
     margin-top: 60px;
     margin-bottom: 10px; }
-    main .maincontent .mainpro .rec_pro .ttl .col-lg-6 {
+    main .mainpro .rec_pro .ttl .col-lg-6 {
       padding: 0; }
-  main .maincontent .mainpro .rec_pro h3 {
+  main .mainpro .rec_pro h3 {
     text-transform: uppercase;
     color: #eb2645; }
-  main .maincontent .mainpro .rec_pro .likeimg {
+  main .mainpro .rec_pro .likeimg {
     width: 120px;
     height: 120px;
     border: 1px solid grey; }
-  main .maincontent .mainpro .rec_pro span {
+  main .mainpro .rec_pro span {
     color: grey;
     font-size: 12px; }
 
@@ -382,7 +552,7 @@ footer hr {
   border: none;
   height: 3px;
   margin-top: 12px;
-  width: 20px;
+  width: 17px;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -423,29 +593,38 @@ footer .info {
   padding: 3.5% 3% 0 0;
   background-color: #182d47;
   color: #fff; }
-  footer .info .info_1 .col-lg-6 {
-    padding-bottom: 4%;
-    text-align: center; }
+  footer .info .info_1 {
+    padding: 0; }
+    footer .info .info_1 .col-lg-6 {
+      padding: 0;
+      padding-bottom: 4%;
+      padding-right: 10%;
+      text-align: center; }
   footer .info .adress {
-    margin-top: 15px; }
+    margin-top: 3px;
+    height: 45px; }
   footer .info input[type="text"] {
     padding-right: 50px;
-    padding-left: 25px;
-    width: 250px;
+    padding-left: 15px;
+    width: 275px;
     height: 48px; }
   footer .info input[type="submit"] {
     border: none;
-    margin-left: -50px;
     height: 40px;
     width: 40px;
     background-color: #eb2645;
-    color: #fff; }
+    color: #fff;
+    position: relative;
+    margin-left: -25px;
+    top: -45px;
+    left: 255px; }
   footer .info .social {
-    margin-top: 25px; }
+    margin-top: 11%; }
     footer .info .social ul.list-inline li {
       float: left;
       list-style: none;
-      margin: 0 5px; }
+      padding: 0;
+      padding-right: 11px; }
       footer .info .social ul.list-inline li a {
         color: #fff; }
       footer .info .social ul.list-inline li img {
@@ -453,7 +632,7 @@ footer .info {
         height: 30px;
         border-radius: 100%; }
   footer .info .group {
-    padding-left: 13%; }
+    padding-left: 20%; }
 footer .copy {
   padding: 1% 4% 2% 4%;
   background-color: #182d47;
@@ -462,7 +641,8 @@ footer .copy {
     border: none;
     background-color: grey;
     height: 2px;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
     width: auto; }
   footer .copy .copyright {
     padding: 0; }
