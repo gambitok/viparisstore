@@ -88,8 +88,6 @@ header {
     }
   }
 
-
-
   .show {
     z-index:99999999;
     background-color: white;
@@ -99,29 +97,63 @@ header {
     width: 280px;
     right: 0px;
 
+
     .footrec {
       background-color: white;
-      padding: 10%;
+      padding: 5%;
       button {
         background-color: #182d47;
         color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 162px;
+        height: 38px;
+        border: none;
       }
     }
 
     .toprec {
-      padding: 10%;
+      padding: 5%;
       background-color: #182d47;
       color: white;
       button {
         background-color: #eb2645;
         color: white;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 162px;
+          height: 38px;
+          border: none;
+        margin-top:10%;
       }
     }
 
+
+    .img {
+      width: 20px;
+      height: 20px;
+    }
+
     .vendari {
-      padding: 10%;
+      padding: 5%;
       background-color: white;
       color: black;
+
+
+      .pm {
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: white;
+        color: black;
+      }
+
+      .dgt {
+        width: 20px;
+        height: 20px;
+      }
 
       .venddttl {
         color: #eb2645;
