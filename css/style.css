@@ -60,7 +60,39 @@ header {
       margin-left: 5px;
       width: 22px;
       height: 14px; }
+  header .show {
+    z-index: 99999999;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    height: 190px;
+    width: 280px;
+    right: 0px; }
+    header .show .footrec {
+      background-color: white;
+      padding: 10%; }
+      header .show .footrec button {
+        background-color: #182d47;
+        color: white; }
+    header .show .toprec {
+      padding: 10%;
+      background-color: #182d47;
+      color: white; }
+      header .show .toprec button {
+        background-color: #eb2645;
+        color: white; }
+    header .show .vendari {
+      padding: 10%;
+      background-color: white;
+      color: black; }
+      header .show .vendari .venddttl {
+        color: #eb2645; }
+  header .rec .show {
+    display: none; }
+  header .rec:hover .show {
+    display: block; }
   header .rec {
+    display: table;
     padding: 0;
     width: 95px;
     background-color: #eb2645;
@@ -324,7 +356,7 @@ main {
           color: dodgerblue;
           text-decoration: none; }
       main .main_content .slide .control_slider .w3-center {
-        margin-left: 4%; }
+        margin-left: 22.5%; }
       main .main_content .slide .mySlides {
         display: none;
         margin-top: 10%; }
@@ -885,7 +917,7 @@ footer .info {
     color: #fff;
     position: relative;
     margin-left: -25px;
-    top: -45px;
+    top: -44px;
     left: 255px; }
   footer .info .social {
     margin-top: 11%; }
