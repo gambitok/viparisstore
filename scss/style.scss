@@ -9,13 +9,13 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 0 !important;
 }
 
 @font-face {
   font-family: Proxy;
   src: url("../fonts/proxima-nova-bold.otf");
 }
-
 
 header {
   width: 100% ;
@@ -26,66 +26,63 @@ header {
     padding: 0;
   }
 
-  .logo {
-      img{
-        height: 75px;
-        padding-left:9px;
-        padding-top:8px;
-    }
+  .logo img{
+      height: 75px;
+      padding-left:9px;
+      padding-top:8px;
   }
 
   .login {
-    .col-lg-6 {
-      padding: 0;
-    }
     margin-top: 35px;
     padding-left:10px;
+
+    .col-lg-6 { padding: 0; }
+
     ul {
-      .colon{
-        list-style: none;
-          a {
+      list-style: none;
+
+      .colon a {
           text-transform: uppercase;
           text-decoration: none;
           color: #000;
-            font-family: Proxy;
-          }
+          font-family: Proxy;
       }
-          .account:before {
-            content: "";
-            display: block;
-            background: url("../img/acc.png") no-repeat;
-            background-size: cover;
-            width: 10px;
-            height:12px;
-            float: left;
-            margin-right:2%;
-          }
 
-          .like:before {
-            content: "";
-            display: block;
-            background: url("../img/like.png") no-repeat;
-            background-size: cover;
-            width: 12px;
-            height:10px;
-            float: left;
-            margin-right:2%;
-            margin-top:3%;
-          }
+      .account:before {
+          content: "";
+          display: block;
+          background: url("../img/acc.png") no-repeat;
+          background-size: cover;
+          width: 10px;
+          height:12px;
+          float: left;
+          margin-right:2%;
+      }
+
+      .like:before {
+          content: "";
+          display: block;
+          background: url("../img/like.png") no-repeat;
+          background-size: cover;
+          width: 12px;
+          height:10px;
+          float: left;
+          margin-right:2%;
+          margin-top:3%;
+       }
     }
   }
 
   .lang {
-    .row {
-      padding-left: 30px;;
-    }
     margin-top: 33px;
-    img {
-      padding: 0;
-      margin-left:5px;
-      width: 22px;
-      height: 14px;
-    }
+    .row { padding-left: 30px; }
+  }
+
+  .lang img {
+    padding: 0;
+    margin-left:5px;
+    width: 22px;
+    height: 14px;
   }
 
   .show {
@@ -97,39 +94,39 @@ header {
     width: 280px;
     right: 0px;
 
-
     .footrec {
       background-color: white;
       padding: 5%;
-      button {
-        background-color: #182d47;
-        color: white;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 162px;
-        height: 38px;
-        border: none;
-      }
+    }
+
+    .footrec button {
+      background-color: #182d47;
+      color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 162px;
+      height: 38px;
+      border: none;
     }
 
     .toprec {
       padding: 5%;
       background-color: #182d47;
       color: white;
-      button {
-        background-color: #eb2645;
-        color: white;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 162px;
-          height: 38px;
-          border: none;
-        margin-top:10%;
-      }
     }
 
+    .toprec button {
+      background-color: #eb2645;
+      color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 162px;
+      height: 38px;
+      border: none;
+      margin-top:10%;
+    }
 
     .img {
       width: 20px;
@@ -140,7 +137,6 @@ header {
       padding: 5%;
       background-color: white;
       color: black;
-
 
       .pm {
         width: 20px;
@@ -172,12 +168,10 @@ header {
   .rec {
     display: table;
     padding: 0;
-    width: 95px;
     background-color: #eb2645;
     height: 80px;
     color: #ffffff;
-    float:right;
-
+    //float:right;
 
     a {
       font-family: Proxy;
@@ -199,10 +193,14 @@ header {
           transform: translateX(-50%) translateY(-50%);
         }
     }
-
-
   }
 
+  .menuMob {
+    display: none;
+    background-color: yellow;
+    padding: 0;
+    height: 80px;
+  }
 }
 
 .banner {
@@ -214,21 +212,22 @@ header {
     background-repeat: no-repeat;
     float: left;
     border: 10px solid white;
+}
 
-    h1 {
-      font-family: Proxy;
-      padding-top: 160px;
-      text-align: center;
-      position: relative;
-      font-weight: bold;
-      font-size: 26pt;
-      color: #000;
-    }
+.banner h1 {
+  margin: 0;
+  font-family: Proxy;
+  padding-top: 160px;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 26pt;
+  color: #000;
 }
 
 nav {
-  .navigation {
 
+  .navigation {
     background: #182d47;
     height: 66px;
     padding: 5px;
@@ -286,7 +285,6 @@ nav {
     .menu a {
       font-family: Proxy;
       text-align: center;
-      //display: block;
       height: 56px;
       text-decoration: none;
       display: table-cell;
@@ -307,7 +305,6 @@ nav {
       li {
         font-family: Proxy;
         float: none;
-        //display: block;
       }
     }
 
@@ -316,9 +313,10 @@ nav {
     }
 
     .search {
-      padding-top:5px;
+      padding-top:4px;
 
       input[type="search"] {
+        font-family: Proxy;
         padding-left:43px;
         width: 295px;
         height: 47px;
@@ -334,16 +332,15 @@ nav {
         background-image: url("../img/search.png");
         background-size: cover;
       }
-      //.inputsearch:focus::-webkit-input-placeholder {color:transparent}
     }
   }
 }
 ////////////////////////////////////////////////////////////////////////////////main
 main {
   width: 100%;
+
   .navig {
     padding: 15px 0 0 2.5%;
-
     h2 {
       font-family: Proxy;
       font-size: 12pt;
@@ -370,7 +367,6 @@ main {
     padding-left:2.5%;
     font-family: Proxy;
 
-
     span {
       text-transform: uppercase;
     }
@@ -387,22 +383,22 @@ main {
         margin-top:-1%;
       }
 
-    .date2:before {
-      content: "";
-      display: block;
-      background: url("../img/date2.png") no-repeat;
-      background-size: cover;
-      width: 18px;
-      height: 20px;
-      float: left;
-      margin-right:4%;
-      margin-top:-1%;
-    }
+      .date2:before {
+        content: "";
+        display: block;
+        background: url("../img/date2.png") no-repeat;
+        background-size: cover;
+        width: 18px;
+        height: 20px;
+        float: left;
+        margin-right:4%;
+        margin-top:-1%;
+      }
   }
 
   .main_content {
     margin-bottom: 6.5%;
-/////////////////////////бокове меню
+
     .sidebar {
       margin-left:10%;
       padding-left:7%;
@@ -424,18 +420,15 @@ main {
         font-family: Proxy;
         color: white;
         text-decoration: none;
-        padding-left:2%;
       }
 
-        aside {
-
-          padding-top:1%;
-          padding-bottom:1%;
-          font-family: Proxy;
-          color: #fff;
-          font-size: 11pt;
-        }
-
+      aside {
+        padding-top:1%;
+        padding-bottom:1%;
+        font-family: Proxy;
+        color: #fff;
+        font-size: 11pt;
+      }
 
       aside:before {
         padding-right:3%;
@@ -449,7 +442,7 @@ main {
         float: left;
       }
 
-      .LULaside1 {
+      .aside1 {
         margin: 0;
         font-family: Proxy;
         padding-bottom:10px;
@@ -458,8 +451,7 @@ main {
         font-size: 11pt;
       }
 
-      .LULaside1 :before {
-        margin-right:4%;
+      .aside1 :before {
         content: "";
         display: block;
         background: url("../img/cursor.png") no-repeat;
@@ -471,7 +463,6 @@ main {
       }
 
       .aside2 {
-
         font-family: Proxy;
         padding-bottom:10px;
         padding-top:5px;
@@ -480,7 +471,6 @@ main {
       }
 
       .aside2:before {
-        margin-right:4%;
         content: "";
         display: block;
         background: url("../img/ii.png") no-repeat;
@@ -491,13 +481,12 @@ main {
         margin-right:2.5%;
       }
 
-
-        img.displayed {
-          margin-top:9%;
-          margin-left:15%;
-          width: 125px;
-          height: 170px;
-        }
+      img.displayed {
+        margin-top:9%;
+        margin-left:15%;
+        width: 125px;
+        height: 170px;
+      }
     }
 ////////////////////слайдер
     .slide {
@@ -535,15 +524,18 @@ main {
             text-decoration: none;
           }
       }
+
       .control_slider {
         .w3-center {
           margin-left:22.5%;
         }
       }
+
       .mySlides {
         display:none;
         margin-top:10%;
       }
+
       .w3-left, .w3-right, .w3-badge {cursor:pointer}
       .w3-badge {height:13px;width:13px;padding:0;}
     }
@@ -576,7 +568,6 @@ main {
       width: 290px;
       height: 370px;
       margin-left:1.5%;
-
 
       button {
         background-color: #eb2645;
@@ -651,51 +642,65 @@ main {
     }
   }
 
-
   ///////////////////////////////////Продукція (products.html)
 
+  .proOptions {
+    text-decoration: none;
+    font-family: Proxy;
+    color: black;
+  }
+
+  .proOptions:after {
+    content: "";
+    display: block;
+    background: url("../img/products/downblue.png") no-repeat;
+    background-size: cover;
+    width: 20px;
+    height:20px;
+    float: left;
+  }
+
   .mainttl_prod {
+
+    .col-lg-6, .col-lg-4 { padding: 0; }
 
     h3 {
       font-family: Proxy;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 12pt;
-      span {
-        color: #eb2645;
-      }
+      span { color: #eb2645; }
     }
 
-    .col-lg-1, .col-lg-2, .col-lg-3, col-lg-4, col-lg-6 {
-      padding: 0;
-    }
+    .col-lg-1, .col-lg-2, .col-lg-3, col-lg-4, col-lg-6 { padding: 0; }
 
-    .col-lg-1 {
-      padding-left: 5px;
-    }
-
+    .col-lg-1 { padding-left: 5px; }
 
     .btn_cat1 {
-      width: 18px;
-      height: 18px;
+      width: 30px;
+      height: 30px;
       margin-right:20%;
       border: none;
       background-image: url("../img/products/menu1.png");
       background-color: white;
       background-size: cover;
+      position:  absolute;
+      left: -12px;
+      top: -10px;
     }
 
     .btn_cat2 {
-      width: 18px;
-      height: 18px;
+      width: 30px;
+      height: 30px;
       margin-right:20%;
       border: none;
       background-image: url("../img/products/menu2.png");
       background-color: white;
       background-size: cover;
+      position:  relative;
+      left: 20px;
+      top: -10px;
     }
-
-
   }
 
   .main_prod {
@@ -710,35 +715,61 @@ main {
       font-weight: bold;
     }
 
-
     .contextmenu{
       background-color: #eb2645;
     }
 
-    hr {
-      margin-left:10%;
-      margin-right:10%;
+    .ulcategor {
+      background-color: white;
+      float: left;
+      list-style: none;
+      li {
+        padding: 5%;
+        background-color: #f7f7f7;
+        border: 1px solid lightgrey;
+        margin-bottom:2%;
+      }
+    }
+
+    .ulvendeur {
+      background-color: white;
+      padding-bottom:6%;
+      float: left;
+      list-style: none;
+      li {
+        padding: 5%;
+        border-bottom: 1px solid lightgrey;
+      }
+      .col-lg-1,.col-lg-2,.col-lg-9 {
+        padding: 0;
+      }
     }
 
     .cost, .category, .vendor {
-      p {
-        font-family: Proxy;
-        color: white;
-        margin-left:10%;
-        margin-right:10%;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
+      font-family: Proxy;
+      color: white;
+      margin-left:10%;
+      margin-right:10%;
+      text-transform: uppercase;
+      font-weight: bold;
       padding-top:5%;
       padding-bottom:5%;
     }
 
+    .cost, .vendor {
+      border-top: 1px solid white;
+    }
+
     .plan {
-      padding-top:14%;
-      padding-left:5%;
-      padding-bottom:5%;
+      font-size: 10pt;
+      padding: 14% 5% 10% 5%;
       background-color: #182d47;
       color: white;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
 
       .col-lg-3, .col-lg-9 {
         padding: 0;
@@ -749,11 +780,13 @@ main {
         font-weight: bold;
         font-size: 13pt;
       }
+
       img {
         border: 1px solid white;
         width: 50px;
         height: 35px;
       }
+
       p, span {
         font-family: Proxy;
         margin-left:2%;
@@ -762,14 +795,16 @@ main {
       }
 
       span:before {
-          content: "";
-          display: block;
-          background: url("../img/down.png") no-repeat;
-          background-size: cover;
-          width: 8px;
-          height:8px;
-          float: left;
-          margin: 4px;
+        content: "";
+        display: block;
+        background: url("../img/products/downred.png") no-repeat;
+        background-size: cover;
+        width: 20px;
+        height:20px;
+        float: left;
+        margin: 4px;
+        position: relative;
+        top: -8px;
       }
     }
 
@@ -820,7 +855,59 @@ main {
         padding-top:25px;
         color: white;
       }
+    }
+  }
 
+  .main_prod hr {
+    margin: 0;
+  }
+
+  .pro_items {
+    margin-top: 5%;
+    text-align: center;
+
+    display: block;
+    margin-left: 35%;
+
+    ul {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .active {
+        a  {color: #eb2645;}
+      }
+
+      .disable {
+        a {color: black;}
+      }
+
+      li {
+        float: left;
+        list-style: none;
+        padding-right:4%;
+      }
+
+      .btn_cat1 {
+        height: 30px;
+        width: 30px;
+        border: none;
+        background: url("../img/products/prev.png") no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -7px;
+      }
+
+      .btn_cat2 {
+        height: 30px;
+        width: 30px;
+        border: none;
+        background: url("../img/products/next.png") no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -7px;
+      }
     }
   }
 
@@ -846,26 +933,6 @@ main {
       width: 70px;
       height:70px;
       float: left;
-    }
-
-    .pro_items {
-      margin: auto;
-      text-align: center;
-
-      .btn_cat1 {
-        width: 40px;
-        height: 25px;
-        border: none;
-        //background: url("../img/products/prev.png") no-repeat;
-        background-size: cover;
-      }
-      .btn_cat2 {
-        width: 40px;
-        height: 25px;
-        border: none;
-        //background: url("../img/products/next.png") no-repeat;
-        background-size: cover;
-      }
     }
 
     .pro {
@@ -938,7 +1005,6 @@ main {
           margin-top:6.5%;
           width: 162px;
           height: 38px;
-
         }
     }
   }
@@ -958,6 +1024,7 @@ main {
       padding-top: 30px;
       padding-bottom:30px;
       height: 55px;
+
       h3 {
         font-family: Proxy;
         margin-top:12px;
@@ -974,8 +1041,26 @@ main {
       padding-bottom:20px;
       background-color: #f5f6f7;
 
-      .contentpro_und {
+      ul {
+        font-family: Proxy;
+        float: left;
+        list-style: none;
+        width: 100%;
 
+        .righttext {text-align: right;}
+
+        .lefttext {text-align: left;}
+
+        .lastLi {
+          padding-top:5%;
+          margin-top:5%;
+          padding-bottom:10%;
+
+          border-top: 1px solid lightgrey;
+        }
+      }
+
+      .contentpro_und {
         a {
           font-family: Proxy;
           font-size: 10pt;
@@ -986,17 +1071,13 @@ main {
         a:before {
           content: "";
           display: block;
-          background: url("../img/rec/like.png") no-repeat;
+          background: url("../img/rec/back.png") no-repeat;
           background-size: cover;
           float: left;
           width: 16px;
           height: 15px;
           margin-right:5%;
           margin-left:20%;
-        }
-
-        a:hover {
-          color: grey;
         }
       }
 
@@ -1011,7 +1092,7 @@ main {
       }
 
       .col-lg-5 {
-          text-align: right;
+        text-align: right;
         padding-right:5%;
       }
 
@@ -1033,7 +1114,7 @@ main {
         border: none;
         background-color: #eb2645;
         color: white;
-        margin-left:30px;
+        margin-left:40px;
         width: 200px;
         height: 50px;
       }
@@ -1043,6 +1124,8 @@ main {
         height: 20px;
       }
     }
+
+
 
     .footpro {
       padding-top: 20px;
@@ -1056,8 +1139,24 @@ main {
         font-size: 11pt;
       }
 
-      .col-lg-5,
-      .col-lg-7 {
+      .footpro_pr {
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: Proxy;
+          text-transform: uppercase;
+        }
+
+        img {
+          position: relative;
+          top: 4px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .col-lg-5, .col-lg-7 {
         padding: 0;
         padding-left:10px;
         text-transform: uppercase;
@@ -1067,6 +1166,8 @@ main {
       img {
         width: 20px;
         height: 20px;
+        position: relative;
+        top: 4px;
       }
     }
 
@@ -1076,7 +1177,7 @@ main {
 
       hr {
         color: grey;
-        margin-left: 3.8%;
+        //margin-left: 3.8%;
         margin-right: 3.8%;
       }
 
@@ -1084,7 +1185,6 @@ main {
         font-family: Proxy;
         font-size: 25pt;
       }
-
     }
 
   .menus2 {
@@ -1103,14 +1203,17 @@ main {
     }
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       margin-right: 20px;
       border: 1px solid grey;
+      background-size: cover;
+      position: relative;
+      top: 3px;
+      left: 5px;
     }
 
   }
-
       .mainpro {
         margin-left:2.5%;
         margin-right:3%;
@@ -1154,9 +1257,9 @@ main {
         .ttl {
           margin-top: 60px;
           margin-bottom: 10px;
-          .col-lg-6 {
-            padding: 0;
-          }
+
+          .col-lg-6 { padding: 0; }
+
           .righttext {
             font-family: Proxy;
             text-align: right;
@@ -1175,9 +1278,7 @@ main {
           color: black;
         }
 
-        a:hover {
-          color: grey;
-        }
+        a:hover { color: grey; }
 
         .alike:before {
           content: "";
@@ -1193,7 +1294,7 @@ main {
         .arec:before {
           content: "";
           display: block;
-          background: url("../img/rec/like.png") no-repeat;
+          background: url("../img/rec/rec.png") no-repeat;
           background-size: cover;
           float: left;
           width: 16px;
@@ -1210,6 +1311,7 @@ main {
     }
 }
 
+////////////////////////////////////////footer
 
 footer {
 
@@ -1311,10 +1413,12 @@ footer {
 
     .info_2 {
       padding-top:1%;
+
       h3 {
         font-size: 14pt;
         margin: 0;
       }
+
       h4 {;
         margin: 0;
         padding: 0;
@@ -1323,15 +1427,18 @@ footer {
 
     .info_1 {
       padding: 0;
+
         .col-lg-6 {
           padding: 0;
           padding-bottom:2%;
           padding-right:10%;
           text-align: center;
+
           h4 {
             padding: 0;
             margin: 0;
           }
+
           hr {
             margin-top:0;
             margin-bottom:0;
@@ -1363,20 +1470,22 @@ footer {
           }
 
         .social {
-
           margin-top:11%;
 
           ul.list-inline {
             margin-top:4%;
+
             li {
               float: left;
               list-style: none;
               padding: 0;
               padding-right:11px;
+
               a {
                 font-family: Proxy;
                 color:#fff;
               }
+
               img {
                 width: 30px;
                 height: 30px;
@@ -1388,6 +1497,7 @@ footer {
 
       .group {
         padding-left:20%;
+
         a:hover {
           color:white;
         }
@@ -1410,17 +1520,11 @@ footer {
       width: auto;
     }
 
-    .copyright {
-      padding: 0;
+    .copyright {  padding: 0;  }
 
-    }
+    h4 {  margin: 0;  }
 
-    h4 {
-      margin: 0;
-    }
-    .credits {
-      padding: 0;
-    }
+    .credits {  padding: 0;  }
 
     ul.list-inline {
       margin-left:5%;
@@ -1435,10 +1539,40 @@ footer {
             text-decoration: none;
             font-size: 9pt;
           }
-        a:hover {
-          text-decoration: underline;
-        }
+        a:hover {  text-decoration: underline;  }
        }
     }
+  }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 640px)  {
+  .login {
+    display: none;
+  }
+  .lang {
+    display: none;
+  }
+  header .rec {
+    height: 80px;
+  }
+  header .menuMob {
+    display: block;
+    height: 80px;
+  }
+
+  .banner {
+    height: 200px;
+    border: none;
+
+    h1 {
+      padding-top: 0;
+    }
+
+  }
+
+  nav {
+    display: none;
   }
 }

@@ -5,7 +5,8 @@ html, body {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: 0 !important; }
 
 @font-face {
   font-family: Proxy;
@@ -25,41 +26,41 @@ header {
     padding-left: 10px; }
     header .login .col-lg-6 {
       padding: 0; }
-    header .login ul .colon {
+    header .login ul {
       list-style: none; }
       header .login ul .colon a {
         text-transform: uppercase;
         text-decoration: none;
         color: #000;
         font-family: Proxy; }
-    header .login ul .account:before {
-      content: "";
-      display: block;
-      background: url("../img/acc.png") no-repeat;
-      background-size: cover;
-      width: 10px;
-      height: 12px;
-      float: left;
-      margin-right: 2%; }
-    header .login ul .like:before {
-      content: "";
-      display: block;
-      background: url("../img/like.png") no-repeat;
-      background-size: cover;
-      width: 12px;
-      height: 10px;
-      float: left;
-      margin-right: 2%;
-      margin-top: 3%; }
+      header .login ul .account:before {
+        content: "";
+        display: block;
+        background: url("../img/acc.png") no-repeat;
+        background-size: cover;
+        width: 10px;
+        height: 12px;
+        float: left;
+        margin-right: 2%; }
+      header .login ul .like:before {
+        content: "";
+        display: block;
+        background: url("../img/like.png") no-repeat;
+        background-size: cover;
+        width: 12px;
+        height: 10px;
+        float: left;
+        margin-right: 2%;
+        margin-top: 3%; }
   header .lang {
     margin-top: 33px; }
     header .lang .row {
       padding-left: 30px; }
-    header .lang img {
-      padding: 0;
-      margin-left: 5px;
-      width: 22px;
-      height: 14px; }
+  header .lang img {
+    padding: 0;
+    margin-left: 5px;
+    width: 22px;
+    height: 14px; }
   header .show {
     z-index: 99999999;
     background-color: white;
@@ -71,29 +72,29 @@ header {
     header .show .footrec {
       background-color: white;
       padding: 5%; }
-      header .show .footrec button {
-        background-color: #182d47;
-        color: white;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 162px;
-        height: 38px;
-        border: none; }
+    header .show .footrec button {
+      background-color: #182d47;
+      color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 162px;
+      height: 38px;
+      border: none; }
     header .show .toprec {
       padding: 5%;
       background-color: #182d47;
       color: white; }
-      header .show .toprec button {
-        background-color: #eb2645;
-        color: white;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 162px;
-        height: 38px;
-        border: none;
-        margin-top: 10%; }
+    header .show .toprec button {
+      background-color: #eb2645;
+      color: white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 162px;
+      height: 38px;
+      border: none;
+      margin-top: 10%; }
     header .show .img {
       width: 20px;
       height: 20px; }
@@ -119,11 +120,9 @@ header {
   header .rec {
     display: table;
     padding: 0;
-    width: 95px;
     background-color: #eb2645;
     height: 80px;
-    color: #ffffff;
-    float: right; }
+    color: #ffffff; }
     header .rec a {
       font-family: Proxy;
       display: block;
@@ -141,6 +140,11 @@ header {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%); }
+  header .menuMob {
+    display: none;
+    background-color: yellow;
+    padding: 0;
+    height: 80px; }
 
 .banner {
   width: 100%;
@@ -151,14 +155,16 @@ header {
   background-repeat: no-repeat;
   float: left;
   border: 10px solid white; }
-  .banner h1 {
-    font-family: Proxy;
-    padding-top: 160px;
-    text-align: center;
-    position: relative;
-    font-weight: bold;
-    font-size: 26pt;
-    color: #000; }
+
+.banner h1 {
+  margin: 0;
+  font-family: Proxy;
+  padding-top: 160px;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 26pt;
+  color: #000; }
 
 nav .navigation {
   background: #182d47;
@@ -222,8 +228,9 @@ nav .navigation {
   nav .navigation .menu li:hover ul {
     display: block; }
   nav .navigation .search {
-    padding-top: 5px; }
+    padding-top: 4px; }
     nav .navigation .search input[type="search"] {
+      font-family: Proxy;
       padding-left: 43px;
       width: 295px;
       height: 47px; }
@@ -299,8 +306,7 @@ main {
       main .main_content .sidebar a {
         font-family: Proxy;
         color: white;
-        text-decoration: none;
-        padding-left: 2%; }
+        text-decoration: none; }
       main .main_content .sidebar aside {
         padding-top: 1%;
         padding-bottom: 1%;
@@ -317,15 +323,14 @@ main {
         width: 8px;
         height: 15px;
         float: left; }
-      main .main_content .sidebar .LULaside1 {
+      main .main_content .sidebar .aside1 {
         margin: 0;
         font-family: Proxy;
         padding-bottom: 10px;
         padding-top: 5px;
         color: #fff;
         font-size: 11pt; }
-      main .main_content .sidebar .LULaside1 :before {
-        margin-right: 4%;
+      main .main_content .sidebar .aside1 :before {
         content: "";
         display: block;
         background: url("../img/cursor.png") no-repeat;
@@ -341,7 +346,6 @@ main {
         color: #fff;
         font-size: 11pt; }
       main .main_content .sidebar .aside2:before {
-        margin-right: 4%;
         content: "";
         display: block;
         background: url("../img/ii.png") no-repeat;
@@ -461,6 +465,20 @@ main {
         margin-right: auto;
         width: 162px;
         height: 38px; }
+  main .proOptions {
+    text-decoration: none;
+    font-family: Proxy;
+    color: black; }
+  main .proOptions:after {
+    content: "";
+    display: block;
+    background: url("../img/products/downblue.png") no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    float: left; }
+  main .mainttl_prod .col-lg-6, main .mainttl_prod .col-lg-4 {
+    padding: 0; }
   main .mainttl_prod h3 {
     font-family: Proxy;
     text-transform: uppercase;
@@ -473,21 +491,27 @@ main {
   main .mainttl_prod .col-lg-1 {
     padding-left: 5px; }
   main .mainttl_prod .btn_cat1 {
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     margin-right: 20%;
     border: none;
     background-image: url("../img/products/menu1.png");
     background-color: white;
-    background-size: cover; }
+    background-size: cover;
+    position: absolute;
+    left: -12px;
+    top: -10px; }
   main .mainttl_prod .btn_cat2 {
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     margin-right: 20%;
     border: none;
     background-image: url("../img/products/menu2.png");
     background-color: white;
-    background-size: cover; }
+    background-size: cover;
+    position: relative;
+    left: 20px;
+    top: -10px; }
   main .main_prod {
     margin-left: 4%;
     margin-right: 3.5%;
@@ -499,25 +523,44 @@ main {
       font-weight: bold; }
     main .main_prod .contextmenu {
       background-color: #eb2645; }
-    main .main_prod hr {
-      margin-left: 10%;
-      margin-right: 10%; }
+    main .main_prod .ulcategor {
+      background-color: white;
+      float: left;
+      list-style: none; }
+      main .main_prod .ulcategor li {
+        padding: 5%;
+        background-color: #f7f7f7;
+        border: 1px solid lightgrey;
+        margin-bottom: 2%; }
+    main .main_prod .ulvendeur {
+      background-color: white;
+      padding-bottom: 6%;
+      float: left;
+      list-style: none; }
+      main .main_prod .ulvendeur li {
+        padding: 5%;
+        border-bottom: 1px solid lightgrey; }
+      main .main_prod .ulvendeur .col-lg-1, main .main_prod .ulvendeur .col-lg-2, main .main_prod .ulvendeur .col-lg-9 {
+        padding: 0; }
     main .main_prod .cost, main .main_prod .category, main .main_prod .vendor {
+      font-family: Proxy;
+      color: white;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-transform: uppercase;
+      font-weight: bold;
       padding-top: 5%;
       padding-bottom: 5%; }
-      main .main_prod .cost p, main .main_prod .category p, main .main_prod .vendor p {
-        font-family: Proxy;
-        color: white;
-        margin-left: 10%;
-        margin-right: 10%;
-        text-transform: uppercase;
-        font-weight: bold; }
+    main .main_prod .cost, main .main_prod .vendor {
+      border-top: 1px solid white; }
     main .main_prod .plan {
-      padding-top: 14%;
-      padding-left: 5%;
-      padding-bottom: 5%;
+      font-size: 10pt;
+      padding: 14% 5% 10% 5%;
       background-color: #182d47;
       color: white; }
+      main .main_prod .plan a {
+        text-decoration: none;
+        color: white; }
       main .main_prod .plan .col-lg-3, main .main_prod .plan .col-lg-9 {
         padding: 0; }
       main .main_prod .plan h3 {
@@ -536,12 +579,14 @@ main {
       main .main_prod .plan span:before {
         content: "";
         display: block;
-        background: url("../img/down.png") no-repeat;
+        background: url("../img/products/downred.png") no-repeat;
         background-size: cover;
-        width: 8px;
-        height: 8px;
+        width: 20px;
+        height: 20px;
         float: left;
-        margin: 4px; }
+        margin: 4px;
+        position: relative;
+        top: -8px; }
   main .foot_prod {
     color: white;
     margin-bottom: 50px; }
@@ -574,6 +619,40 @@ main {
         text-align: center;
         padding-top: 25px;
         color: white; }
+  main .main_prod hr {
+    margin: 0; }
+  main .pro_items {
+    margin-top: 5%;
+    text-align: center;
+    display: block;
+    margin-left: 35%; }
+    main .pro_items ul a {
+      text-decoration: none;
+      color: black; }
+    main .pro_items ul .active a {
+      color: #eb2645; }
+    main .pro_items ul .disable a {
+      color: black; }
+    main .pro_items ul li {
+      float: left;
+      list-style: none;
+      padding-right: 4%; }
+    main .pro_items ul .btn_cat1 {
+      height: 30px;
+      width: 30px;
+      border: none;
+      background: url("../img/products/prev.png") no-repeat;
+      background-size: cover;
+      position: relative;
+      top: -7px; }
+    main .pro_items ul .btn_cat2 {
+      height: 30px;
+      width: 30px;
+      border: none;
+      background: url("../img/products/next.png") no-repeat;
+      background-size: cover;
+      position: relative;
+      top: -7px; }
   main .items_prod {
     padding: 2.2% 0 5% 0; }
     main .items_prod .hrpro {
@@ -591,19 +670,6 @@ main {
       width: 70px;
       height: 70px;
       float: left; }
-    main .items_prod .pro_items {
-      margin: auto;
-      text-align: center; }
-      main .items_prod .pro_items .btn_cat1 {
-        width: 40px;
-        height: 25px;
-        border: none;
-        background-size: cover; }
-      main .items_prod .pro_items .btn_cat2 {
-        width: 40px;
-        height: 25px;
-        border: none;
-        background-size: cover; }
     main .items_prod .pro {
       background-color: #fff;
       padding: 1.6% 3% 0 0;
@@ -678,6 +744,20 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #f5f6f7; }
+    main .contentpro ul {
+      font-family: Proxy;
+      float: left;
+      list-style: none;
+      width: 100%; }
+      main .contentpro ul .righttext {
+        text-align: right; }
+      main .contentpro ul .lefttext {
+        text-align: left; }
+      main .contentpro ul .lastLi {
+        padding-top: 5%;
+        margin-top: 5%;
+        padding-bottom: 10%;
+        border-top: 1px solid lightgrey; }
     main .contentpro .contentpro_und a {
       font-family: Proxy;
       font-size: 10pt;
@@ -686,15 +766,13 @@ main {
     main .contentpro .contentpro_und a:before {
       content: "";
       display: block;
-      background: url("../img/rec/like.png") no-repeat;
+      background: url("../img/rec/back.png") no-repeat;
       background-size: cover;
       float: left;
       width: 16px;
       height: 15px;
       margin-right: 5%;
       margin-left: 20%; }
-    main .contentpro .contentpro_und a:hover {
-      color: grey; }
     main .contentpro .col-lg-5, main .contentpro .col-lg-7 {
       padding: 0;
       padding-left: 7%; }
@@ -719,7 +797,7 @@ main {
       border: none;
       background-color: #eb2645;
       color: white;
-      margin-left: 30px;
+      margin-left: 40px;
       width: 200px;
       height: 50px; }
     main .contentpro img {
@@ -734,21 +812,31 @@ main {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 11pt; }
-    main .footpro .col-lg-5,
-    main .footpro .col-lg-7 {
+    main .footpro .footpro_pr a {
+      text-decoration: none;
+      color: black;
+      font-family: Proxy;
+      text-transform: uppercase; }
+    main .footpro .footpro_pr img {
+      position: relative;
+      top: 4px;
+      width: 20px;
+      height: 20px; }
+    main .footpro .col-lg-5, main .footpro .col-lg-7 {
       padding: 0;
       padding-left: 10px;
       text-transform: uppercase;
       font-size: 9pt; }
     main .footpro img {
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      position: relative;
+      top: 4px; }
   main .menus {
     margin-bottom: 20px;
     margin-left: 3.7%; }
     main .menus hr {
       color: grey;
-      margin-left: 3.8%;
       margin-right: 3.8%; }
     main .menus label {
       font-family: Proxy;
@@ -764,10 +852,14 @@ main {
       font-family: Proxy;
       font-size: 25pt; }
     main .menus2 img {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       margin-right: 20px;
-      border: 1px solid grey; }
+      border: 1px solid grey;
+      background-size: cover;
+      position: relative;
+      top: 3px;
+      left: 5px; }
   main .mainpro {
     margin-left: 2.5%;
     margin-right: 3%;
@@ -823,7 +915,7 @@ main {
     main .mainpro .rec_pro .arec:before {
       content: "";
       display: block;
-      background: url("../img/rec/like.png") no-repeat;
+      background: url("../img/rec/rec.png") no-repeat;
       background-size: cover;
       float: left;
       width: 16px;
@@ -996,5 +1088,28 @@ footer .copy {
         font-size: 9pt; }
       footer .copy ul.list-inline li a:hover {
         text-decoration: underline; }
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .login {
+    display: none; }
+
+  .lang {
+    display: none; }
+
+  header .rec {
+    height: 80px; }
+
+  header .menuMob {
+    display: block;
+    height: 80px; }
+
+  .banner {
+    height: 200px;
+    border: none; }
+    .banner h1 {
+      padding-top: 0; }
+
+  nav {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
