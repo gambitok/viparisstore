@@ -1146,6 +1146,12 @@ footer .copy {
   header .menuMob {
     display: block;
     height: 60px; }
+    header .menuMob img {
+      position: relative;
+      top: 20px;
+      left: 10px;
+      height: 25px;
+      width: 35px; }
 
   .banner {
     height: 200px;
@@ -1234,7 +1240,12 @@ footer .copy {
     line-height: 0; }
 
   footer .copy .col-xs-12 {
-    padding: 0; } }
+    padding: 0; }
+
+  footer .info input[type="text"] {
+    width: 240px; }
+  footer .info input[type="submit"] {
+    margin-left: -60px; } }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
     height: 70px; }
@@ -1255,20 +1266,37 @@ footer .copy {
   header .menuPad {
     display: block;
     height: 70px; }
+    header .menuPad img {
+      position: relative;
+      top: 24px;
+      height: 25px;
+      width: 35px; }
 
   header .likePad {
     display: block;
     height: 70px; }
+    header .likePad img {
+      position: relative;
+      top: 22px;
+      left: 5px; }
 
   header .searchPad {
     display: block;
     height: 70px; }
+    header .searchPad img {
+      position: relative;
+      top: 20px;
+      left: 3px; }
 
   .banner {
     height: 200px;
     border: none; }
     .banner h1 {
       padding-top: 0; }
+
+  main .mainpro {
+    margin-left: 0px;
+    margin-right: 0px; }
 
   main .date-cat {
     padding-top: 2%; }
@@ -1290,6 +1318,10 @@ footer .copy {
 
   .navig {
     display: none; }
+
+  main .contentpro .btnbuy {
+    margin-left: 20px;
+    width: 170px; }
 
   footer .info .info_1 .col-lg-6 {
     padding: 0; }
