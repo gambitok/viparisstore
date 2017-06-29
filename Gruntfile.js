@@ -64,6 +64,7 @@ module.exports = function(grunt) {
                         header: '<%= TemplatePath %>/common/header.html',
                         footer: '<%= TemplatePath %>/common/footer.html',
                         banner: '<%= TemplatePath %>/views/banner.html',
+                        banner_pro: '<%= TemplatePath %>/views/banner_pro.html',
                         main: '<%= TemplatePath %>/views/main.html',
                         main_rec: '<%= TemplatePath %>/views/main_rec.html',
                         main_pro: '<%= TemplatePath %>/views/main_pro.html',

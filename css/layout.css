@@ -19,7 +19,7 @@
 @media (min-width: 1200px) {
   /* line 18, ../scss/layout.scss */
   .container {
-    width: 1304px;
+    width: 100%;
   }
 }
 /* line 22, ../scss/layout.scss */
