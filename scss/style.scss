@@ -1,4 +1,5 @@
 @import "_sprites.scss";
+@import "w3.scss";
 
 html, body {
   width: 100%;
@@ -223,6 +224,7 @@ header {
 
 }
 
+
 .banner_pro {
   width: 100%;
   height: 250px;
@@ -246,7 +248,7 @@ header {
 
 .banner_mob_pro {
   width: 100%;
-  height: 150px;
+  height: 145px;
   background-color: #fde626;
   background-image:url("../img/banner2.png");
   background-position: top;
@@ -458,9 +460,9 @@ nav {
       padding-right:0;
 
       input[type="search"] {
-        padding-left:45px;
+        padding-left:48px;
         height: 47px;
-        width: 295px;
+        width: 100%;
         font-family: Proxy;
         font-size: 14px;
         float: right;
@@ -475,8 +477,7 @@ nav {
         background-size: cover;
         position: absolute;
         top:13px;
-        margin-left:-25px;
-        left:55px;
+        left: 15px;
       }
     }
   }
@@ -826,15 +827,17 @@ nav {
 
 
   .mob_prod_bot {
-    padding-top:15px;
-    padding-bottom:15px;
+    padding-top:10px;
+    padding-bottom:32px;
+    margin-top:18px;
     button {
       background-color: #eb2645;
       color: white;
-      width: 300px;
+      width: 295px;
       height: 50px;
       text-transform: uppercase;
       font-family: Proxy;
+      border: none;
     }
   }
 
@@ -1127,6 +1130,8 @@ nav {
 
       .inpro {
         margin-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #eee;
 
         .vend {
           border: 1px solid grey;
@@ -1196,9 +1201,11 @@ nav {
         background: url("../img/rec/like.png") no-repeat;
         background-size: cover;
         float: left;
-        width: 16px;
-        height: 15px;
-        margin-right:5%;
+        width: 24px;
+        height: 25px;
+        margin-right: 5%;
+        position: relative;
+        top: 10px;
       }
 
       .arec:before {
@@ -1207,9 +1214,11 @@ nav {
         background: url("../img/rec/rec.png") no-repeat;
         background-size: cover;
         float: left;
-        width: 16px;
-        height: 15px;
-        margin-right:5%;
+        width: 24px;
+        height: 25px;
+        margin-right: 5%;
+        position: relative;
+        top: 10px;
       }
 
       span {
@@ -1246,7 +1255,6 @@ nav {
         color: silver;
         text-transform: uppercase;
       }
-
       h3:before {
         content: "";
         display: block;
@@ -1256,13 +1264,13 @@ nav {
         height:8px;
         float: left;
         margin-right:5%;
+        position: relative;
+        top: 4px;
       }
-
-
       p { font-size: 9pt; }
       img {
-        width: 120px;
-        height: 120px;
+        width: 136px;
+        height: 136px;
         border: 1px solid silver;
       }
     }
@@ -1393,10 +1401,12 @@ main {
     .sidebar {
       margin-left:10%;
       padding-left:2%;
+      padding-top:10%;
+      padding-bottom:12%;
+
       background: #eb2645;
       width: 290px;
-      height: 435px;
-      padding-top:10%;
+      //height: 435px;
 
       .side-title { padding-left:2.5%;}
 
@@ -1487,16 +1497,15 @@ main {
       margin-left:40px;
       margin-right:30px;
       background-color: #2b2e33;
-      height: 435px;
-      width: 92.8%;
+      width: auto;
 
       img {
-        height: 435px;
-        width: 290px;
+        width: 100%;
         margin: 0;
+        height: 432px;
       }
 
-      .col-lg-5,col-lg-7 { padding: 0; }
+      .col-lg-4,col-lg-8 { padding: 0; }
 
       .w3-content {
         margin: 0;
@@ -1505,6 +1514,7 @@ main {
           h3 {
             font-family: Proxy;
             font-size: 16pt;
+            margin-bottom:4%;
           }
           p {
             font-family: Proxy;
@@ -1520,14 +1530,14 @@ main {
       }
 
       .control_slider {
-        .w3-center {
-          margin-left:23%;
-        }
+        margin-top:23%;
       }
 
       .mySlides {
         display:none;
-        margin-top:10%;
+        padding-top:6%;
+        padding-left:4%;
+        padding-right: 9%;
       }
 
       .w3-left, .w3-right, .w3-badge {cursor:pointer}
@@ -2398,6 +2408,7 @@ footer {
     background-color: #182d47;
     color:#fff;
 
+
     .info_2 {
       padding-top:0.8%;
       padding-left:0;
@@ -2423,6 +2434,10 @@ footer {
           padding-right:10%;
           text-align: center;
 
+          h4 {
+            padding-top:4%;
+          }
+
           hr {
             margin-top:0;
             margin-bottom:0;
@@ -2440,7 +2455,6 @@ footer {
             padding-left:15px;
             width: 275px;
             height: 48px;
-
           }
 
           input[type="submit"] {
@@ -2450,9 +2464,8 @@ footer {
             background-color: #eb2645;
             color:#fff;
             position: absolute;
-            margin-left:-25px;
             top: 4px;
-            left:255px;
+            right: 77px;
           }
 
         .social {
@@ -2590,23 +2603,45 @@ footer {
   }
 
   .banner {  display: none;  }
-
   .banner_mob { display: block; }
-
   .banner_mob2 {display: block; }
-
   .banner_pro { display: none; }
-
   .banner_mob_pro { display: block; }
+  .navigation {display: none}
 
-  nav { display: none; }
-
+  nav {display: none;}
   main {display: none}
+  main .slide {display: none}
+  main .sidebar {display: none}
+  main .products {display: none}
+  main .mainpro {display: none}
+  main .date-cat {display: none}
+  main .menus2 {display: none}
 
   .main_mob {display: block}
 
+  .main_mob .date-cat {
+    padding: 0;
+    padding-top:5%;
+    margin-bottom:15%;
+    .date1, .date2 {
+      padding-top:1%;}
+  }
+
+  .main_mob .menus2 {
+    margin-bottom:10%;
+    label {
+      font-size: 18pt;
+    }
+    hr{display: none}
+  }
+
+
   .main_mob .buypro {
     padding: 0;
+    .headpro {
+      height: auto;
+    }
     .footpro_pr { display: none; }
   }
 
@@ -2627,14 +2662,88 @@ footer {
     margin-left:25px;
   }
 
-  .main_mob  .mainpro .rec_pro .ttl .righttext { text-align: left!important; }
 
   .main_mob .mob_products { display: block; }
 
-  .main_mob .items_prod .pro button.displayed {width: 260px;}
+  .main_mob .items_prod .pro button.displayed { width: 260px; }
 
-  .main_mob .foot_prod .foot_prod_row {
-    padding-top:20px;}
+  .main_mob .foot_prod .foot_prod_row { padding-top:20px;}
+
+  .main_mob .buypro {
+
+    .headpro {
+    padding: 0;
+    padding-top:13px;
+    padding-bottom:13px;
+    height: auto;
+    h3{ font-size: 11pt;}
+    }
+    .contentpro {
+      font-size: 11pt;
+    }
+    ul {
+      .lastLi {
+      border: none;
+      padding: 0;
+      margin: 0;
+      text-transform: uppercase;
+        border-bottom: 1px solid silver;
+        padding-bottom:5%;
+    }
+
+    }
+
+    .btnbuy {
+      margin-top:7%;
+      width: 295px;
+      margin-left:15px;
+    }
+
+    p {
+      padding-bottom: 1%;
+    }
+
+    .footpro .footpro_aj {
+      margin-top:6%;
+      margin-left:15px;
+      margin-right:15px;
+      padding-top:15px;
+      padding-bottom:15px;
+    }
+
+  }
+
+  .main_mob .mainpro {
+    margin-left:15px;
+    padding-top:1%;
+  }
+
+  .main_mob .mainpro .rec_pro h3 {font-size: 11pt;
+    margin-bottom:0;}
+
+  .main_mob  .mainpro .rec_pro .ttl .righttext {
+    font-size: 9pt ;
+    text-align: left!important; }
+
+  .main_mob .mainpro .rec_pro .inpro {
+    padding-top:2%;}
+
+  .main_mob .mainpro .rec_pro .inpro .vend {
+    height: 135px;
+    width: 135px;
+  }
+
+  .main_mob .mob_products .mob_pro {
+    h2 {
+      padding: 0;
+      margin: 0;
+
+    }
+    h3 {
+      padding: 0;
+      font-size: 8pt;
+    }
+  }
 
   footer .faq {
     padding-top:20px;
@@ -2647,6 +2756,10 @@ footer {
     h2 { padding-left:10%}
   }
 
+  footer .info input[type="submit"] {
+    left: 225px;
+  }
+
   footer .info {padding-bottom: 10%;
     padding-right:0;}
 
@@ -2656,15 +2769,12 @@ footer {
       padding: 0;
       padding-top:5%;
     }
-    h4 {
-      padding-top:5%;
-    }
+    h4 { padding-top:5%; }
   }
 
   footer .info .social {
     text-align: center;
     padding-bottom:30px;
-    //ul { margin-left:15%; }
     .col-xs-12 {
       text-align: center;
       float: left;
@@ -2725,21 +2835,25 @@ footer {
 
   header .likePad {
     display: block;
+    padding: 0;
     height: 70px;
     img {
-      position: relative;
-      top: 22px;
-      left: 5px;
+      display: block;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:35%;
     }
   }
 
   header .searchPad {
     display: block;
+    padding: 0;
     height: 70px;
     img {
-      position: relative;
-      top: 20px;
-      left: 3px;
+      display: block;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:35%;
     }
   }
 
@@ -2748,6 +2862,8 @@ footer {
     border: none;
     h1 { padding-top: 0; }
   }
+
+  .navigation {display: none}
 
   main .mainpadPro {display: block;}
 
@@ -2816,7 +2932,7 @@ footer {
 
   footer .info {
     input[type="text"] {width: 240px;}
-    input[type="submit"] {margin-left: -60px}
+    input[type="submit"] {right: 0px;}
   }
 
   footer .copy ul.list-inline li a {font-size: 7pt;

@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <title>ViParis Store</title>
     <link type="text/css" rel="stylesheet" href="css/layout.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/w3.css" />
 </head>
 
 <body>
@@ -255,9 +256,11 @@
                         <li><a href="#">Autour de ma<br> manifestation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 search">
-                    <input type="submit" value=" ">
-                    <input type="search" placeholder="Recherche">
+                <div class="col-lg-3 ">
+                    <div class="search">
+                        <input type="submit" value=" ">
+                        <input type="search" placeholder="Recherche">
+                    </div>
                 </div>
             </div>
         </div>
@@ -659,47 +662,38 @@
                         </div>
                     </div>
                     <hr>
+
                     <div class="row inpro">
-                        <div class="col-lg-2 col-xs-5">
+
+                        <div class="col-lg-2 col-xs-6">
                             <img class="vend" src="img/rec/240.jpg" alt="vend1">
                         </div>
-                        <div class="col-lg-4 col-xs-offset-1 col-xs-6">
-                            Branchement intermittent 240 V
-                            <p>
-                                <span>REX Q12345</span>
-                        </div>
-                        <div class="col-lg-offset-2 col-lg-4 col-xs-6">
+                        <div class="col-xs-6">
+                            <p>Branchement intermittent 240 V</p>
+                            <span>REX Q12345</span>
                             <div class="row sum">
-                                <div class="col-lg-6 col-xs-12">
-
-                                    <button class="pm" onclick="plus()">-</button>
-                                    <input id="count1" class="dgt" type="text" value="10" pattern="\d [0-9]">
-                                    <button class="pm" onclick="minus()">+</button>
-
-                                </div>
-                                <div class="col-lg-6 col-xs-12">
-                                    00,00 Є НТ
-                                </div>
+                                <button class="pm">-</button>
+                                <input class="dgt" type="text" value="10">
+                                <button class="pm">+</button>
                             </div>
+                            00,00 <span>€ НТ</span>
                         </div>
+
                         <div class="row"></div>
 
-                        <div class="row laki col-lg-offset-8 col-lg-4 col-sm-offset-5 col-sm-6 col-xs-offset-1 col-xs-10">
-                            <div class="col-lg-6 col-xs-6">
-                                <a class="alike" href="">
-                                    ajouter a ma liste</a>
+                        <div class="row laki">
+                            <div class="col-xs-offset-1 col-xs-5">
+                                <a class="alike" href="">ajouter a ma liste</a>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <a class="arec" href="">
-                                    suprmer</a>
+                            <div class="col-xs-offset-1 col-xs-5">
+                                <a class="arec" href="">suprmer</a>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <hr>
-                    </div>
+
                 </div>
-                <div class="rec_pro">
+
+                <div class="rec_pro" style="margin-top: 32px;">
                     <div class="row ttl">
                         <div class="col-lg-6 col-xs-12">
                             <h3>Vendeur2</h3>
@@ -710,79 +704,67 @@
 
                     </div>
                     <hr>
+
                     <div class="row inpro">
-                        <div class="col-lg-2 col-xs-5">
-                            <img class="vend" src="img/rec/ipad.png" alt="vend1">
+
+                        <div class="col-lg-2 col-xs-6">
+                            <img class="vend" src="img/rec/240.jpg" alt="vend1">
                         </div>
-                        <div class="col-lg-4 col-xs-offset-1 col-xs-6">
-                            Branchement intermittent 240 V
-                            <p>
-                                <span>REX Q12345</span>
-                        </div>
-                        <div class="col-lg-offset-2 col-lg-4 col-xs-6">
+                        <div class="col-xs-6">
+                            <p>Branchement intermittent 240 V</p>
+                            <span>REX Q12345</span>
                             <div class="row sum">
-                                <div class="col-lg-6 col-xs-12">
-
-                                    <button class="pm" onclick="plus2()">-</button>
-                                    <input id="count2" class="dgt" type="text" value="10">
-                                    <button class="pm" onclick="minus2()">+</button>
-
-                                </div>
-                                <div class="col-lg-6 col-xs-12">
-                                    00,00 Є НТ
-                                </div>
+                                <button class="pm">-</button>
+                                <input class="dgt" type="text" value="10">
+                                <button class="pm">+</button>
                             </div>
+                            00,00 <span>€ НТ</span>
                         </div>
+
                         <div class="row"></div>
-                        <div class="row laki col-lg-offset-8 col-lg-4 col-sm-offset-5 col-sm-6 col-xs-offset-1 col-xs-10">
-                            <div class="col-lg-6 col-xs-6">
-                                <a class="alike" href="">
-                                    ajouter a ma liste</a>
+
+                        <div class="row laki">
+                            <div class="col-xs-offset-1 col-xs-5">
+                                <a class="alike" href="">ajouter a ma liste</a>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <a class="arec" href="">
-                                    suprmer</a>
+                            <div class="col-xs-offset-1 col-xs-5">
+                                <a class="arec" href="">suprmer</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
-                        <hr>
+
+
                         <div class="row inpro">
-                            <div class="col-lg-2 col-xs-5">
-                                <img class="vend" src="img/rec/ipad.png" alt="vend1">
+
+                            <div class="col-lg-2 col-xs-6">
+                                <img class="vend" src="img/rec/240.jpg" alt="vend1">
                             </div>
-                            <div class="col-lg-4 col-xs-offset-1 col-xs-6">
-                                Branchement intermittent 240 V
-                                <p>
-                                    <span>REX Q12345</span>
-                            </div>
-                            <div class="col-lg-offset-2 col-lg-4 col-xs-6">
+                            <div class="col-xs-6">
+                                <p>Branchement intermittent 240 V</p>
+                                <span>REX Q12345</span>
                                 <div class="row sum">
-                                    <div class="col-lg-6 col-xs-12">
-
-                                        <button class="pm" onclick="plus3()">-</button>
-                                        <input id="count3" class="dgt" type="text" value="10">
-                                        <button class="pm" onclick="minus3()">+</button>
-
-                                    </div>
-                                    <div class="col-lg-6 col-xs-12">
-                                        00,00 Є НТ
-                                    </div>
+                                    <button class="pm">-</button>
+                                    <input class="dgt" type="text" value="10">
+                                    <button class="pm">+</button>
                                 </div>
+                                00,00 <span>€ НТ</span>
                             </div>
+
                             <div class="row"></div>
-                            <div class="row laki col-lg-offset-8 col-lg-4 col-sm-offset-5 col-sm-6 col-xs-offset-1 col-xs-10">
-                                <div class="col-lg-6 col-xs-6">
-                                    <a class="alike" href="">
-                                        ajouter a ma liste</a>
+
+                            <div class="row laki">
+                                <div class="col-xs-offset-1 col-xs-5">
+                                    <a class="alike" href="">ajouter a ma liste</a>
                                 </div>
-                                <div class="col-lg-6 col-xs-6">
-                                    <a class="arec" href="">
-                                        suprmer</a>
+                                <div class="col-xs-offset-1 col-xs-5">
+                                    <a class="arec" href="">suprmer</a>
                                 </div>
                             </div>
                         </div>
-                        <hr>
+
+
                     </div>
                 </div>
 
@@ -862,39 +844,25 @@
                     <div class="row col-sm-6 col-lg-12">
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Premier salon</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Les infromation cles</h4>
+                            <hr>
+                            <h4>Les infromation cles</h4>
                         </div>
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Liste d'archats</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Rezerves avant
-                                        <p>
-                                            de commander</h4>
+                            <hr>
+                            <h4>Rezerves avant<br> de commander</h4>
                         </div>
                     </div>
                     <div class="row col-sm-6 col-lg-12">
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Service exposants</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Les conseils
-                                        <p>
-                                            de nos experts</h4>
+                            <hr>
+                            <h4>Les conseils<br> de nos experts</h4>
                         </div>
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Devenir prestataire</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Donnez de la visibilite
-                                        <p>
-                                            a vos produits</h4>
+                            <hr>
+                            <h4>Donnez de la visibilite<br> a vos produits</h4>
                         </div>
                     </div>
                 </div>

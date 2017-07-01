@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <title>ViParis Store</title>
     <link type="text/css" rel="stylesheet" href="css/layout.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/w3.css" />
 </head>
 
 <body>
@@ -291,9 +292,11 @@
                         <li><a href="#">Autour de ma<br> manifestation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 search">
-                    <input type="submit" value=" ">
-                    <input type="search" placeholder="Recherche">
+                <div class="col-lg-3 ">
+                    <div class="search">
+                        <input type="submit" value=" ">
+                        <input type="search" placeholder="Recherche">
+                    </div>
                 </div>
             </div>
         </div>
@@ -320,8 +323,9 @@
 
 
             <div class="row main_content">
+
                 <div class="col-lg-3">
-                    <div class="sidebar">
+                    <div class="row sidebar">
                         <div class="row side-title">
                             <span>Informations pratiques</span>
                         </div>
@@ -342,6 +346,7 @@
                             <img class="displayed" src="img/sidebar-img.png" alt="SidebarImage">
                         </div>
                     </div>
+
                 </div>
 
                 <div class="col-lg-9">
@@ -349,14 +354,14 @@
 
                         <div class="slide">
 
-                            <div class="w3-content w3-display-container" style="max-width:800px">
+                            <div class="w3-content w3-display-container">
                                 <div class="row">
 
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-4">
                                         <img src="img/slider/slider.png">
                                     </div>
 
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-8">
 
                                         <div class="row mySlides">
                                             <a href="">Nouveau service 1</a>
@@ -379,52 +384,52 @@
                                                 adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                         </div>
 
-                                    </div>
-                                </div>
+                                        <div class="row control_slider">
+                                            <div class="w3-center w3-container">
+                                                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                                                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                                                <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(1)"></span>
+                                                <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(2)"></span>
+                                                <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(3)"></span>
+                                            </div>
+                                        </div>
 
-                                <div class="row control_slider">
-                                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:75%">
-                                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                                        <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(1)"></span>
-                                        <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(2)"></span>
-                                        <span class="w3-badge demo w3-border w3-transparent w3-hover-grey" onclick="currentDiv(3)"></span>
+                                        <script>
+                                            var slideIndex = 1;
+                                            showDivs(slideIndex);
+
+                                            function plusDivs(n) {
+                                                showDivs(slideIndex += n);
+                                            }
+
+                                            function currentDiv(n) {
+                                                showDivs(slideIndex = n);
+                                            }
+
+                                            function showDivs(n) {
+                                                var i;
+                                                var x = document.getElementsByClassName("mySlides");
+                                                var dots = document.getElementsByClassName("demo");
+                                                if (n > x.length) {
+                                                    slideIndex = 1
+                                                }
+                                                if (n < 1) {
+                                                    slideIndex = x.length
+                                                }
+                                                for (i = 0; i < x.length; i++) {
+                                                    x[i].style.display = "none";
+                                                }
+                                                for (i = 0; i < dots.length; i++) {
+                                                    dots[i].className = dots[i].className.replace(" w3-cyan", "");
+                                                }
+                                                x[slideIndex - 1].style.display = "block";
+                                                dots[slideIndex - 1].className += " w3-cyan";
+                                            }
+                                        </script>
+
                                     </div>
                                 </div>
                             </div>
-
-                            <script>
-                                var slideIndex = 1;
-                                showDivs(slideIndex);
-
-                                function plusDivs(n) {
-                                    showDivs(slideIndex += n);
-                                }
-
-                                function currentDiv(n) {
-                                    showDivs(slideIndex = n);
-                                }
-
-                                function showDivs(n) {
-                                    var i;
-                                    var x = document.getElementsByClassName("mySlides");
-                                    var dots = document.getElementsByClassName("demo");
-                                    if (n > x.length) {
-                                        slideIndex = 1
-                                    }
-                                    if (n < 1) {
-                                        slideIndex = x.length
-                                    }
-                                    for (i = 0; i < x.length; i++) {
-                                        x[i].style.display = "none";
-                                    }
-                                    for (i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" w3-cyan", "");
-                                    }
-                                    x[slideIndex - 1].style.display = "block";
-                                    dots[slideIndex - 1].className += " w3-cyan";
-                                }
-                            </script>
 
                         </div>
                     </div>
@@ -587,39 +592,25 @@
                     <div class="row col-sm-6 col-lg-12">
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Premier salon</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Les infromation cles</h4>
+                            <hr>
+                            <h4>Les infromation cles</h4>
                         </div>
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Liste d'archats</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Rezerves avant
-                                        <p>
-                                            de commander</h4>
+                            <hr>
+                            <h4>Rezerves avant<br> de commander</h4>
                         </div>
                     </div>
                     <div class="row col-sm-6 col-lg-12">
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Service exposants</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Les conseils
-                                        <p>
-                                            de nos experts</h4>
+                            <hr>
+                            <h4>Les conseils<br> de nos experts</h4>
                         </div>
                         <div class="col-lg-6 col-xs-12 col-sm-6">
                             <h2>Devenir prestataire</h2>
-                            <p>
-                                <hr>
-                                <p>
-                                    <h4>Donnez de la visibilite
-                                        <p>
-                                            a vos produits</h4>
+                            <hr>
+                            <h4>Donnez de la visibilite<br> a vos produits</h4>
                         </div>
                     </div>
                 </div>
